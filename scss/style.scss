@@ -21,9 +21,10 @@ body {
 
 
 .header{
-    /*border: solid magenta;*/
+    border: solid magenta;
 
     .headerMenu{
+
     /*border: solid yellow;*/
     width: 100vw;
     background-color: rgb(105, 164, 251);
@@ -65,6 +66,15 @@ body {
     .carrusel{
         /*border: solid black;*/
         /*margin-top: 50px;*/
+
+        /*border: solid yellow;*/
+        width: 100vw;
+        background-color: rgb(105, 164, 251);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
     }
 
 

@@ -12,7 +12,7 @@ body {
   background-color: #8AE2FB; }
 
 .header {
-  /*border: solid magenta;*/ }
+  border: solid magenta; }
   .header .headerMenu {
     /*border: solid yellow;*/
     width: 100vw;
@@ -40,7 +40,15 @@ body {
     border-radius: 15px; }
   .header .carrusel {
     /*border: solid black;*/
-    /*margin-top: 50px;*/ }
+    /*margin-top: 50px;*/
+    /*border: solid yellow;*/
+    width: 100vw;
+    background-color: #69a4fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100; }
 
 main {
   /*border: solid green;*/
