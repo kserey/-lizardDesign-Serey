@@ -1,4 +1,16 @@
 /* comentario en sass y css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+body {
+  /*border: solid pink;*/
+  background-color: #8AE2FB; }
+
 .header {
   /*border: solid magenta;*/ }
   .header .headerMenu {
@@ -10,7 +22,110 @@
     align-items: center;
     position: fixed;
     z-index: 100; }
+  .header .logoMarca {
+    width: 10%; }
+  .header .fondo-nav {
+    background-color: #69a4fb; }
+  .header .botonBurger {
+    background-color: white; }
+  .header .subMenu {
+    border: solid whitesmoke;
+    padding: 5px;
+    background-color: #69a4fb;
+    border-radius: 15px; }
+  .header .linkMenu, .header .navbar-nav li a {
+    color: white; }
+  .header .subMenu :hover {
+    background-color: #8AE2FB;
+    border-radius: 15px; }
+  .header .carrusel {
+    /*border: solid black;*/
+    /*margin-top: 50px;*/ }
 
-body {
-  /*border: solid pink;*/
-  background-color: #8AE2FB; }
+main {
+  /*border: solid green;*/
+  padding: 0.5rem;
+  background-color: #a3c7ff; }
+  main .botonWsp {
+    display: flex;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 50%;
+    right: 1%;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; }
+    main .botonWsp img {
+      width: 5rem;
+      border-radius: 50%; }
+      main .botonWsp img .logoMini {
+        width: 2rem;
+        border-radius: 50%; }
+  main .news {
+    /*border: solid blue;*/
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "newsTitle" "newsSubtitle1" "newsHijos1" "newsSubtitle2" "newsHijos2" "newsSubtitle3" "newsHijos3" "newsSubtitle4" "newsHijos4";
+    align-items: center;
+    justify-content: center;
+    justify-items: center; }
+    main .news .newsTitle {
+      /*border: solid purple;*/
+      grid-area: newsTitle;
+      justify-self: left;
+      padding-bottom: 1rem; }
+      main .news .newsTitle h2 {
+        font-size: 1.5rem; }
+      main .news .newsTitle h3 {
+        font-size: 1rem; }
+    main .news div h4 {
+      /*border: solid cyan;*/
+      width: 90vw;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bolder; }
+      main .news div h4 .newsSubtitle1 {
+        grid-area: newsSubtitle1; }
+      main .news div h4 .newsSubtitle2 {
+        grid-area: newsSubtitle2; }
+      main .news div h4 .newsSubtitle3 {
+        grid-area: newsSubtitle3; }
+      main .news div h4 .newsSubtitle4 {
+        grid-area: newsSubtitle4; }
+    main .news div img {
+      padding-bottom: 0.5rem;
+      width: 90vw;
+      justify-items: center; }
+      main .news div img .newsHijos1 {
+        grid-area: newsHijos1;
+        /*border: solid red;*/ }
+      main .news div img .newsHijos2 {
+        grid-area: newsHijos2;
+        /*border: solid red;*/ }
+      main .news div img .newsHijos3 {
+        grid-area: newsHijos3;
+        /*border: solid red;*/ }
+      main .news div img .newsHijos4 {
+        grid-area: newsHijos4;
+        /*border: solid red;*/ }
+
+footer {
+  /*border: solid yellow;*/
+  display: flex;
+  padding: 1rem;
+  background-color: #8AE2FB;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center; }
+  footer p {
+    /*border: solid green;*/
+    padding-right: 0.8rem; }
+  footer a img {
+    width: 2rem;
+    border-radius: 50%; }

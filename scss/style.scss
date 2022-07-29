@@ -2,7 +2,23 @@
 /* comentario en sass y css */
 
 
-// nesting
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    /*border: solid pink;*/
+    background-color: #8AE2FB; 
+
+
+
+}
+
 
 .header{
     /*border: solid magenta;*/
@@ -16,13 +32,185 @@
     align-items: center;
     position: fixed;
     z-index: 100;
-}
+    }
+
+    .logoMarca{
+    width: 10%;
+    }
+
+    .fondo-nav{
+        background-color: rgb(105, 164, 251);
+    }
+
+    .botonBurger{
+        background-color: white;
+    }
+
+    .subMenu{
+        border: solid whitesmoke;
+        padding: 5px;
+        background-color: rgb(105, 164, 251);
+        border-radius: 15px;
+    }
+
+    .linkMenu, .navbar-nav li a{
+        color: white;
+    }
+
+    .subMenu :hover{
+        background-color:#8AE2FB;
+        border-radius: 15px;
+    }
+
+    .carrusel{
+        /*border: solid black;*/
+        /*margin-top: 50px;*/
+    }
 
 
 
 }
 
-body{
-    /*border: solid pink;*/
+main{
+    /*border: solid green;*/
+    padding: 0.5rem;
+    background-color:rgb(163, 199, 255);
+
+    .botonWsp{
+        display: flex;
+        position:fixed;
+        width:3rem;
+        height:3rem;
+        bottom:50%;
+        right:1%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50%;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+      
+        img{
+            width: 5rem;
+            border-radius: 50%;
+
+            .logoMini{
+                width: 2rem;
+                border-radius: 50%;
+            }
+
+        }
+    
+    }
+  
+    .news{
+        /*border: solid blue;*/
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"newsTitle"
+                            "newsSubtitle1"
+                            "newsHijos1"
+                            "newsSubtitle2"
+                            "newsHijos2"
+                            "newsSubtitle3"
+                            "newsHijos3"
+                            "newsSubtitle4"
+                            "newsHijos4";
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        .newsTitle{
+            /*border: solid purple;*/
+            grid-area: newsTitle;
+            justify-self: left;
+            padding-bottom: 1rem;
+        
+    
+            h2{
+                font-size: 1.5rem;
+            }
+                
+            h3{
+                font-size: 1rem;
+            }
+        }
+    
+
+        div{
+            
+            h4{
+                /*border: solid cyan;*/
+                width: 90vw;
+                text-align: center;
+                font-size: 1rem;
+                font-weight: bolder;
+
+                .newsSubtitle1{
+                    grid-area: newsSubtitle1;
+                }
+                .newsSubtitle2{
+                    grid-area: newsSubtitle2;
+                }
+                .newsSubtitle3{
+                    grid-area: newsSubtitle3;
+                }
+                .newsSubtitle4{
+                    grid-area: newsSubtitle4;
+                }
+
+            }
+                
+            img{
+                padding-bottom: 0.5rem;
+                width: 90vw;
+                justify-items: center;
+
+                .newsHijos1{
+                    grid-area: newsHijos1;
+                    /*border: solid red;*/
+                }
+                
+                .newsHijos2{
+                    grid-area: newsHijos2;
+                    /*border: solid red;*/
+                }
+                
+                .newsHijos3{
+                    grid-area: newsHijos3;
+                    /*border: solid red;*/
+                }
+                
+                .newsHijos4{
+                    grid-area: newsHijos4;
+                    /*border: solid red;*/
+                }
+            }
+        }
+    }   
+}
+
+
+footer{
+    /*border: solid yellow;*/
+    display: flex;
+    padding: 1rem;
     background-color: #8AE2FB;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        /*border: solid green;*/
+        padding-right: 0.8rem;
+    }
+
+    a img{
+        width: 2rem;
+        border-radius: 50%;
+    }
+
+    
 }
