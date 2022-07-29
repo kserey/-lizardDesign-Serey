@@ -1,7 +1,6 @@
 // línea de comentario scss
 /* comentario en sass y css */
 
-
 *{
     margin: 0;
     padding: 0;
@@ -15,13 +14,11 @@ body {
     /*border: solid pink;*/
     background-color: #8AE2FB; 
 
-
-
 }
 
 
 .header{
-    border: solid magenta;
+    /*border: solid magenta;*/
 
     .headerMenu{
 
@@ -66,18 +63,12 @@ body {
     .carrusel{
         /*border: solid black;*/
         /*margin-top: 50px;*/
-
-        /*border: solid yellow;*/
         width: 100vw;
         background-color: rgb(105, 164, 251);
         display: flex;
         justify-content: center;
         align-items: center;
-        position: fixed;
-        z-index: 100;
     }
-
-
 
 }
 
@@ -137,8 +128,7 @@ main{
             grid-area: newsTitle;
             justify-self: left;
             padding-bottom: 1rem;
-        
-    
+            
             h2{
                 font-size: 1.5rem;
             }
