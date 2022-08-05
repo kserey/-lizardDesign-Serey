@@ -21,7 +21,7 @@ body {
     /*border: solid magenta;*/
 
     .headerMenu{
-    border: solid yellow;
+    /*border: solid yellow;*/
     width: 100%;
     background-color: rgb(105, 164, 251);
     display: flex;
@@ -31,12 +31,12 @@ body {
     z-index: 100;
     
         .nav{
-            border: solid red;
+            /*border: solid red;*/
             justify-content: space-around;
             background-color: rgb(105, 164, 251);
 
             .linkMenu{
-                border: solid purple;
+                /*border: solid purple;*/
             }
                 
             .botonBurger{
@@ -44,7 +44,7 @@ body {
             }
 
             .menu{
-                border: solid yellow;
+                /*border: solid yellow;*/
             }
 
             .subMenu{

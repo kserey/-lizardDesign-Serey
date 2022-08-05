@@ -14,7 +14,7 @@ body {
 .header {
   /*border: solid magenta;*/ }
   .header .headerMenu {
-    border: solid yellow;
+    /*border: solid yellow;*/
     width: 100%;
     background-color: #69a4fb;
     display: flex;
@@ -23,15 +23,15 @@ body {
     position: fixed;
     z-index: 100; }
     .header .headerMenu .nav {
-      border: solid red;
+      /*border: solid red;*/
       justify-content: space-around;
       background-color: #69a4fb; }
       .header .headerMenu .nav .linkMenu {
-        border: solid purple; }
+        /*border: solid purple;*/ }
       .header .headerMenu .nav .botonBurger {
         background-color: white; }
       .header .headerMenu .nav .menu {
-        border: solid yellow; }
+        /*border: solid yellow;*/ }
       .header .headerMenu .nav .subMenu {
         border: solid whitesmoke;
         padding: 5px;
