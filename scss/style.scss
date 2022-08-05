@@ -21,48 +21,55 @@ body {
     /*border: solid magenta;*/
 
     .headerMenu{
-
-    /*border: solid yellow;*/
-    width: 100vw;
+    border: solid yellow;
+    width: 100%;
     background-color: rgb(105, 164, 251);
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 100;
-    }
+    
+        .nav{
+            border: solid red;
+            justify-content: space-around;
+            background-color: rgb(105, 164, 251);
 
-    .logoMarca{
-    width: 10%;
-    }
+            .linkMenu{
+                border: solid purple;
+            }
+                
+            .botonBurger{
+                background-color: white;
+            }
 
-    .fondo-nav{
-        background-color: rgb(105, 164, 251);
-    }
+            .menu{
+                border: solid yellow;
+            }
 
-    .botonBurger{
-        background-color: white;
-    }
+            .subMenu{
+                border: solid whitesmoke;
+                padding: 5px;
+                background-color: rgb(105, 164, 251);
+                border-radius: 15px;
+            }
 
-    .subMenu{
-        border: solid whitesmoke;
-        padding: 5px;
-        background-color: rgb(105, 164, 251);
-        border-radius: 15px;
-    }
+            .linkMenu, .navbar-nav li a{
+                color: white;
+                /*border: solid turquoise;*/
+            }
 
-    .linkMenu, .navbar-nav li a{
-        color: white;
-    }
+            .subMenu :hover{
+                background-color:#8AE2FB;
+                border-radius: 15px;
+            }
+        }
 
-    .subMenu :hover{
-        background-color:#8AE2FB;
-        border-radius: 15px;
     }
 
     .carrusel{
         /*border: solid black;*/
-        /*margin-top: 50px;*/
+        padding-top: 4rem;
         width: 100vw;
         background-color: rgb(105, 164, 251);
         display: flex;
