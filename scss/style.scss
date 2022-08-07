@@ -12,7 +12,7 @@
 
 body {
     /*border: solid pink;*/
-    background-color: #8AE2FB; 
+    background-image: linear-gradient(to bottom right, #A3C7FF, #5371FF)
 
 }
 
@@ -23,49 +23,50 @@ body {
     .headerMenu{
     /*border: solid yellow;*/
     width: 100%;
-    background-color: rgb(105, 164, 251);
+    background-color: #6881fa;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     z-index: 100;
     
-        .nav{
-            /*border: solid red;*/
-            justify-content: space-around;
-            background-color: rgb(105, 164, 251);
 
-            .linkMenu{
-                /*border: solid purple;*/
-            }
-                
-            .botonBurger{
-                background-color: white;
-            }
-
-            .menu{
-                /*border: solid yellow;*/
-            }
-
-            .subMenu{
-                border: solid whitesmoke;
-                padding: 5px;
-                background-color: rgb(105, 164, 251);
-                border-radius: 15px;
-            }
-
-            .linkMenu, .navbar-nav li a{
-                color: white;
-                /*border: solid turquoise;*/
-            }
-
-            .subMenu :hover{
-                background-color:#8AE2FB;
-                border-radius: 15px;
-            }
+        .linkMenu{
+            /*border: solid purple;*/
+            img{
+            width: 7rem;
+            }   
+        }
+            
+        .botonBurger{
+            background-color: white;
         }
 
+        .menu{
+            /*border: solid yellow;*/
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        .subMenu{
+            border: solid whitesmoke;
+            padding: 5px;
+            background-color: #5371FF;
+            border-radius: 15px;
+        }
+
+        .linkMenu, .navbar-nav li a{
+            color: white;
+            /*border: solid turquoise;*/
+        }
+
+        .subMenu :hover{
+            background-color:#8AE2FB;
+            border-radius: 15px;
+        }
     }
+
+
 
     .carrusel{
         /*border: solid black;*/
@@ -75,149 +76,237 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .carrusel-title{
+            font-size: 5rem;
+        }
+
+        .carrusel-boton{
+            display: inline-block;      
+            background-color: #8AE2FB;
+            padding: 0.1rem 0.5rem;
+            border-radius: 20rem;
+            font-size: 1rem;
+
+            
+            a{
+                text-decoration: none;
+            }
+
+            a:link{
+                color: #5371FF;
+            }
+
+            a:visited{
+                color: #5371FF;
+            }
+
+            a:hover{
+                border-radius: 20px;
+                margin: 2px;
+                padding: 2px;
+                font-weight: bold;
+            }
+
+
+        }
+
+
+
+
+
+
     }
 
 }
 
 main{
     /*border: solid green;*/
-    padding: 0.5rem;
-    background-color:rgb(163, 199, 255);
+
 
     .botonWsp{
-        display: flex;
+        background-color: rgb(13, 193, 67);
         position:fixed;
-        width:3rem;
-        height:3rem;
-        bottom:50%;
-        right:1%;
-        background-color:#25d366;
-        color:#FFF;
-        border-radius:50%;
-        justify-content: center;
-        align-items: center;
+        bottom:10%;
+        right:1rem;
         z-index: 100;
+        border-radius: 50%;
       
-        img{
-            width: 5rem;
+        .logoWsp{
+            width: 4rem;
             border-radius: 50%;
-
-            .logoMini{
-                width: 2rem;
-                border-radius: 50%;
-            }
-
         }
     
     }
-  
-    .news{
-        /*border: solid blue;*/
-        padding: 0.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:"newsTitle"
-                            "newsSubtitle1"
-                            "newsHijos1"
-                            "newsSubtitle2"
-                            "newsHijos2"
-                            "newsSubtitle3"
-                            "newsHijos3"
-                            "newsSubtitle4"
-                            "newsHijos4";
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
 
-        .newsTitle{
-            /*border: solid purple;*/
-            grid-area: newsTitle;
-            justify-self: left;
-            padding-bottom: 1rem;
+    .principal{
+        padding: 2rem;
+
+      
+       .principalTitle{
+           padding-bottom: 1rem;
+           
+           h2{
+               font-size: 1.5rem;
+           }
+               
+           h3{
+               font-size: 1rem;
+           }
+       }
+    }
+
+  
+    .principal{
+
+        /* estilos exclusivos INDEX */
+
+        .news{
+            padding: 5rem;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+           
+
+            grid-template-areas: "card1 card2"
+                                 "card3 card4";
+
+            .news1{
+                grid-area: card1;
+            }
+            .news2{
+                grid-area: card2;
+            }
+            .news3{
+                grid-area: card3;
+            }
+            .news4{
+                grid-area: card4;
+            }
+
+            .newsSubtitle{
+                text-align: center;
+
+            }
             
-            h2{
-                font-size: 1.5rem;
-            }
-                
-            h3{
-                font-size: 1rem;
-            }
+
         }
     
 
-        div{
+        /* estilos exclusivos PRODUCTOS */
+   
+        .productos{
+            padding: 1rem;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
             
-            h4{
-                /*border: solid cyan;*/
-                width: 90vw;
-                text-align: center;
-                font-size: 1rem;
-                font-weight: bolder;
+            grid-template-areas: "estampados papeleria";
 
-                .newsSubtitle1{
-                    grid-area: newsSubtitle1;
-                }
-                .newsSubtitle2{
-                    grid-area: newsSubtitle2;
-                }
-                .newsSubtitle3{
-                    grid-area: newsSubtitle3;
-                }
-                .newsSubtitle4{
-                    grid-area: newsSubtitle4;
-                }
-
+            .prod1{
+                grid-area: estampados;
             }
-                
-            img{
-                padding-bottom: 0.5rem;
-                width: 90vw;
-                justify-items: center;
+            .prod2{
+                grid-area: papeleria;
+            }       
 
-                .newsHijos1{
-                    grid-area: newsHijos1;
-                    /*border: solid red;*/
-                }
-                
-                .newsHijos2{
-                    grid-area: newsHijos2;
-                    /*border: solid red;*/
-                }
-                
-                .newsHijos3{
-                    grid-area: newsHijos3;
-                    /*border: solid red;*/
-                }
-                
-                .newsHijos4{
-                    grid-area: newsHijos4;
-                    /*border: solid red;*/
-                }
-            }
         }
-    }   
-}
+        /* estilos exclusivos ESTAMPADOS Y PAPELERÍA */
+        .tipoProd{
+            padding: 1rem;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+            
+            grid-template-areas: "prod1 prod2 prod3";
 
+            .prod1{
+                grid-area: prod1;
+            }
+            .prod2{
+                grid-area: prod2;
+            }  
+            .prod3{
+                grid-area: prod3;
+            }  
+
+        }
+    
+    
+    
+        /* estilos exclusivos OFERTAS */
+    
+    
+        /* estilos exclusivos CONTACTO */
+    
+        /* estilos exclusivos CONÓCENOS */
+
+        .iconos{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+
+            div{
+                width: 3fr;
+                justify-items: center;
+         
+                img{
+                    display: inline-block;
+                    width: 50%;
+                }
+
+            }
+
+ 
+
+        }
+    
+    
+    
+    }
+
+
+}
+    
 
 footer{
-    /*border: solid yellow;*/
-    display: flex;
-    padding: 1rem;
-    background-color: #8AE2FB;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
+    padding: 0.5rem 0rem;
+    background-color: #6881fa;
 
-    p{
-        /*border: solid green;*/
-        padding-right: 0.8rem;
+    .rrss p{
+        font-weight: bold;
+        text-align: center;
     }
 
-    a img{
-        width: 2rem;
-        border-radius: 50%;
+    .containerFooter{
+
+        a{
+            text-decoration: none;
+            color: wheat;
+        }
+
+        .footerBlocks{
+            width: 100%;
+            display: inline-flex;
+            align-items: flex-start;
+            justify-content: space-around;
+
+            .footerBlocksTitle{
+                font-size: 1.5rem
+            }
+
+
+        }
+        
+        .derechos{
+            text-align: center;
+            margin: 1rem 0rem 0.5rem 0rem;
+            font-size: 0.8rem;
+        }
+
+
     }
+
 
     
 }

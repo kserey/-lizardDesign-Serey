@@ -31,65 +31,72 @@
         <!-- HEADER -->
 
         <header class="header">
-                
-            <div class="headerMenu">
-                <!-- NavBar -->
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid nav">
-                        <!-- Logo -->
-                        <a class="navbar-brand linkMenu" href="index.html">
-                            LizardD
-                        </a>
+            
+            <!-- NavBar -->
+            <nav class="navbar navbar-expand-lg headerMenu">
 
-                        <!-- Menú -->
-                        <button class="navbar-toggler botonBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                <!-- Logo -->
+                <div>
+                    <a class="navbar-brand linkMenu" href="index.html">
+                        <img src="img/logo_200x95_bgw.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Menú -->
+                <div>
+                    <button class="navbar-toggler botonBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item col-auto">
+                                <a class="nav-link" href="pages/ofertas.html">Ofertas!</a>
+                            
+                            <li class="nav-item  col-auto dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                                </a>
+                                <ul class="dropdown-menu subMenu">
+                                    <li>
+                                        <a class="dropdown-item" href="pages/productos.html">Productos</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages/estampados.html">Estampados</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages/papeleria.html">Papelería</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item  col-auto dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Conócenos
+                                </a>
+                                <ul class="dropdown-menu subMenu">
+                                    <li>
+                                        <a class="dropdown-item" href="pages/conocenos.html">Quiénes Somos</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages/conocenos.html">Antes de Comprar</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="pages/conocenos.html">Despachos</a>
+                                    </li>
+                                </ul>
+                            </li>
                         
-                        <div class="collapse navbar-collapse menu" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item col-auto">
-                                    <a class="nav-link" href="pages/ofertas.html">Ofertas!</a>
-                                
-                                <li class="nav-item  col-auto dropdown">
-                                    <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Productos
-                                    </a>
-                                    <ul class="dropdown-menu subMenu">
-                                        <li>
-                                            <a class="dropdown-item" href="pages/productos.html#estampados">Estampados</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="pages/productos.html#papeleria">Papelería</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item  col-auto dropdown">
-                                    <a class="nav-link dropdown-toggle" href="pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Conócenos
-                                    </a>
-                                    <ul class="dropdown-menu subMenu">
-                                        <li>
-                                            <a class="dropdown-item" href="pages/conocenos.html">Quiénes Somos</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="pages/conocenos.html">Antes de Comprar</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="pages/conocenos.html">Despachos</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                              
-                                <li class="nav-item  col-auto">
-                                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                                </li>
-                                                             
-                            </ul>
-                        </div>
+                            <li class="nav-item  col-auto">
+                                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                            </li>
+                                                        
+                        </ul>
                     </div>
-                </nav>
-            </div>
+                </div>    
+            </nav>
 
 
 
@@ -98,7 +105,13 @@
             <!-- CARRUSEL -->
 
             <div class="carrusel">
-                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="carouselExampleDark" class="carousel slide carousel-dark touch" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3">  </button>
+                    </div>
 
                     <div class="carousel-inner">
 
@@ -106,35 +119,47 @@
                             <img src="img/portada1_2400.png" class="d-block w-100" alt="imagen portada 1">
                                                
                             <div class="carousel-caption">
-                                <h1> Bienvenidos a LizardDesign </h1>
-                                <h2 class="subTitleCarrusel1"> Estampados y Papelería </h2>
+                                <h1 class="carrusel_title"> Bienvenidos a LizardDesign </h1>
+                                <p class="carrusel-subtitle"> Estampados y Papelería </p>
+                                <div class="carrusel-boton">
+                                    <a href="pages/productos.html">Productos</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="carousel-item">
                             <img src="img/portada2_2400.png" class="d-block w-100" alt="imagen portada 2">
                             <div class="carousel-caption">
-                                <h1> OFERTAS! </h1>
-                                <h2 class="subTitleCarrusel2 text-center col"> Aprovecha nuestros productos en stock con un 30% OFF </h2>
+                                <h1 class="carrusel_title"> Conoce nuestras Ofertas! </h1>
+                                <p class="carrusel-subtitle"> Aprovecha nuestros productos en stock con un 30% OFF </p>
+                                <div class="carrusel-boton">
+                                   <a href="pages/ofertas.html">Ofertas</a>
+                                </div>
                             </div>
                         </div>
 
                         <div class="carousel-item">
                             <img src="img/portada3_2400.png" class="d-block w-100" alt="imagen portada 3">
                             <div class="carousel-caption">
-                                <h1> Celebra en grande </h1>
-                                <h2 class="subTitleCarrusel3"> Hacemos realidad tus ideas para tus celebraciones temáticas </h2>
+                                <h1 class="carrusel_title"> Celebra en grande </h1>
+                                <p class="carrusel-subtitle"> Hacemos realidad tus ideas para tus celebraciones temáticas </p>
+                                <div class="carrusel-boton">
+                                    <a href="pages/estampados.html">Estampados</a>
+                                </div>
+                                <div class="carrusel-boton">
+                                    <a href="pages/papeleria.html">Papelería</a>
+                                </div>
                             </div>
                         </div>
 
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                     </button>
 
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                     </button>
@@ -149,38 +174,48 @@
             <!-- Botón wsp -->
 
             <section class="botonWsp">
-                <a href="https://api.whatsapp.com/send?phone=56978103737&text=Hola, quisiera hacerles unas consultas" target="_blank"><img class="logoMini" src="img/logo_WSP.png" alt="logo_WSP"></a>
+                <a href="https://api.whatsapp.com/send?phone=56978103737&text=Hola, quisiera hacer unas consultas" target="_blank">
+                    <img class="logoWsp" src="img/logo_WSP.png" alt="logo whatsapp">
+                </a>
             </section>
 
 
             <!-- Novedades -->
 
-            <section class="news">
-                <div class="newsTitle">
+            <section class="principal">
+
+                <div class="principalTitle">
                     <h2>Novedades</h2>
                     <h3>Mira nuestros últimos trabajos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum architecto expedita doloribus excepturi dicta eligendi debitis harum, nam, molestiae qui deleniti maxime omnis quia, repellendus vero provident officiis quis a.</p>
                 </div>
 
-                <div>
-                    <h4 class="newsSubtitle1">Tazones personalizados</h4>
-                    <img class="newsHijos1" src="img/tazonXLpersonalizado.png" alt="imagen foto tazon XL personalizado">
-                </div>
+                <div class="news">
 
-                <div>
-                    <h4 class="newsSubtitle2">Adornos cumpleaños</h4>
-                    <img class="newsHijos2" src="img/cumpleanos1.png" alt="imagen adornos_cumpleaños">
-                </div>
+                    <div class="news1">
+                        <h4 class="newsSubtitle">Agenda personalizada</h4>
+                        <img class="newsHijos" src="img/agenda_personalizada.png" alt="imagen foto tazon XL personalizado">
+                        <p>Exclusiva agenda personalizada año 2022, con los colores preferidos de Ximena y con el contenido en el formato que a ella le gusta</p>
+                    </div>
 
-                <div>
-                    <h4 class="newsSubtitle3">Puzzle infantil</h4>
-                    <img class="newsHijos3" src="img/papeleria1_puzzle.png" alt="imagen puzzle">
-                </div>
+                    <div class="news2">
+                        <h4 class="newsSubtitle">Adornos cumpleaños</h4>
+                        <img class="newsHijos" src="img/adornos_cumpleanos2.png">
+                        <p>Cake topper, adornos para bombillas y cupcakes, todo en temática de tiernos dinosaurios, para nuestra pequeña clienta Mina</p>
+                    </div>
 
-                <div>
-                    <h4 class="newsSubtitle4">Toppers para tortas</h4>
-                    <img class="newsHijos4" src="img/topper2.webp" alt="imagen topper tortas">
-                </div>
-                        
+                    <div class="news3">
+                        <h4 class="newsSubtitle">Puzzle infantil</h4>
+                        <img class="newsHijos" src="img/puzzle.png" alt="imagen puzzle">
+                        <p>Un entretenido puzzle infantil de Paw Patrol para José Ignacio, 60 piezas, para entreterse en casa las tardes de lluvia. </p>
+                    </div>
+
+                    <div class="news4">
+                        <h4 class="newsSubtitle">Toppers para tortas</h4>
+                        <img class="newsHijos" src="img/topper.png" alt="imagen topper tortas">
+                        <p>Nos pidieron este topper especial para darle la bienvenida a esa amiga querida que no veían hace años.</p>
+                    </div>
+                </div>   
             </section>
         </main>
 
@@ -188,10 +223,11 @@
         <!-- FOOTER -->
 
         <footer>
-            <p>No olvides seguirnos en </p>
+            <p>No olvides seguirnos en 
             <a href="https://www.instagram.com/lizard__design/" target="_blank">
-                <img src="img/logo_IG.png" alt="logo_instagram">
+                <img src="img/logo_IG.png" alt="link a IG LizardD">
             </a>
+            </p>
             
         </footer>
 
