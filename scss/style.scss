@@ -1,6 +1,9 @@
-// línea de comentario scss
-/* comentario en sass y css */
 
+@import "base/variables";
+@import "base/mixin";
+@import "base/listas";
+
+/* RESET */
 *{
     margin: 0;
     padding: 0;
@@ -10,26 +13,29 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* ESTILOS GENERALES BODY */
+
 body {
     /*border: solid pink;*/
-    background-image: linear-gradient(to bottom right, #A3C7FF, #5371FF)
+    background-image: linear-gradient(to bottom right, (nth($paleta-pastel, $n:3)), (nth($paleta, $n:3)))
+
+
 
 }
 
+/* ESTILOS DEL HEADER */
 
 .header{
-    /*border: solid magenta;*/
+    /* ESTILOS DEL MENÚ */
 
     .headerMenu{
-    /*border: solid yellow;*/
     width: 100%;
-    background-color: #6881fa;
+    background-color: nth($paleta-pastel, $n:3);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    z-index: 100;
-    
+    z-index: 100;    
 
         .linkMenu{
             /*border: solid purple;*/
@@ -39,7 +45,7 @@ body {
         }
             
         .botonBurger{
-            background-color: white;
+            background-color: nth($paleta, $n:1);
         }
 
         .menu{
@@ -48,31 +54,31 @@ body {
             font-size: 1.3rem;
         }
 
+        /* ESTILOS DEL SUBMENÚ */
+
         .subMenu{
-            border: solid whitesmoke;
+            border: solid nth($paleta-pastel, $n:1);
             padding: 5px;
-            background-color: #5371FF;
+            background-color: nth($paleta, $n:3);
             border-radius: 15px;
         }
 
         .linkMenu, .navbar-nav li a{
-            color: white;
-            /*border: solid turquoise;*/
+            color: nth($paleta-pastel, $n:1);
         }
 
         .subMenu :hover{
-            background-color:#8AE2FB;
+            background-color:nth($paleta, $n:5);
+            color: nth($paleta, $n:3);
+            font-weight: bold;
             border-radius: 15px;
         }
     }
 
-
-
+    /* ESTILOS CARRUSEL*/
     .carrusel{
-        /*border: solid black;*/
         padding-top: 4rem;
-        width: 100vw;
-        background-color: rgb(105, 164, 251);
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,22 +89,22 @@ body {
 
         .carrusel-boton{
             display: inline-block;      
-            background-color: #8AE2FB;
+            background-color: nth($paleta, $n:5);
             padding: 0.1rem 0.5rem;
             border-radius: 20rem;
             font-size: 1rem;
-
+            font-weight: bold;
             
             a{
                 text-decoration: none;
             }
 
             a:link{
-                color: #5371FF;
+                color: nth($paleta, $n:3);
             }
 
             a:visited{
-                color: #5371FF;
+                color: nth($paleta, $n:3);
             }
 
             a:hover{
@@ -108,29 +114,28 @@ body {
                 font-weight: bold;
             }
 
-
         }
-
-
-
-
-
 
     }
 
 }
+
+/* ESTILOS DEL MAIN */
 
 main{
     /*border: solid green;*/
 
 
     .botonWsp{
-        background-color: rgb(13, 193, 67);
+        background-color: $color-wsp;
         position:fixed;
         bottom:10%;
         right:1rem;
         z-index: 100;
         border-radius: 50%;
+        animation: pulse;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
       
         .logoWsp{
             width: 4rem;
@@ -162,15 +167,37 @@ main{
         /* estilos exclusivos INDEX */
 
         .news{
-            padding: 5rem;
+            padding: 0.5rem 0rem 0.5rem 0rem;
             display: grid;
+            place-content: center;
+
             grid-template-rows: auto;
-            grid-template-columns: auto;
+            grid-template-columns: 6fr 6fr;
            
 
             grid-template-areas: "card1 card2"
                                  "card3 card4";
 
+            div{
+                text-align: center;
+                padding: 0rem 1rem 0.5rem 1rem;
+
+                h4{
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+
+                img{
+                    width: 60%;
+                }
+
+                p{
+                    padding-top: 1rem;
+                }
+
+
+            }
+            
             .news1{
                 grid-area: card1;
             }
@@ -182,13 +209,7 @@ main{
             }
             .news4{
                 grid-area: card4;
-            }
-
-            .newsSubtitle{
-                text-align: center;
-
-            }
-            
+            }           
 
         }
     
@@ -268,42 +289,41 @@ main{
 
 }
     
+/* ESTILOS DEL FOOTER */
 
 footer{
     padding: 0.5rem 0rem;
-    background-color: #6881fa;
-
-    .rrss p{
-        font-weight: bold;
-        text-align: center;
-    }
+    background-color: nth($paleta, $n:7);
 
     .containerFooter{
 
         a{
             text-decoration: none;
-            color: wheat;
+            color: nth($paleta-pastel, $n:1);
         }
 
         .footerBlocks{
+            padding: 0rem 0.5rem 0rem 0.5rem;
             width: 100%;
             display: inline-flex;
             align-items: flex-start;
-            justify-content: space-around;
+            justify-content: space-between;
 
-            .footerBlocksTitle{
-                font-size: 1.5rem
+            .block{
+                padding: 0.5rem;
+            
+                .footerBlocksTitle{
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                }
             }
-
 
         }
         
         .derechos{
             text-align: center;
-            margin: 1rem 0rem 0.5rem 0rem;
             font-size: 0.8rem;
         }
-
 
     }
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* comentario en sass y css */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,21 +8,24 @@
   list-style: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
+/* ESTILOS GENERALES BODY */
 body {
   /*border: solid pink;*/
-  background-image: linear-gradient(to bottom right, #A3C7FF, #5371FF); }
+  background-image: linear-gradient(to bottom right, #8396f8, #5371FF); }
 
+/* ESTILOS DEL HEADER */
 .header {
-  /*border: solid magenta;*/ }
+  /* ESTILOS DEL MENÚ */
+  /* ESTILOS CARRUSEL*/ }
   .header .headerMenu {
-    /*border: solid yellow;*/
     width: 100%;
-    background-color: #6881fa;
+    background-color: #8396f8;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    z-index: 100; }
+    z-index: 100;
+    /* ESTILOS DEL SUBMENÚ */ }
     .header .headerMenu .linkMenu {
       /*border: solid purple;*/ }
       .header .headerMenu .linkMenu img {
@@ -39,16 +42,15 @@ body {
       background-color: #5371FF;
       border-radius: 15px; }
     .header .headerMenu .linkMenu, .header .headerMenu .navbar-nav li a {
-      color: white;
-      /*border: solid turquoise;*/ }
+      color: whitesmoke; }
     .header .headerMenu .subMenu :hover {
-      background-color: #8AE2FB;
+      background-color: #8AE1FA;
+      color: #5371FF;
+      font-weight: bold;
       border-radius: 15px; }
   .header .carrusel {
-    /*border: solid black;*/
     padding-top: 4rem;
-    width: 100vw;
-    background-color: #69a4fb;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -56,10 +58,11 @@ body {
       font-size: 5rem; }
     .header .carrusel .carrusel-boton {
       display: inline-block;
-      background-color: #8AE2FB;
+      background-color: #8AE1FA;
       padding: 0.1rem 0.5rem;
       border-radius: 20rem;
-      font-size: 1rem; }
+      font-size: 1rem;
+      font-weight: bold; }
       .header .carrusel .carrusel-boton a {
         text-decoration: none; }
       .header .carrusel .carrusel-boton a:link {
@@ -72,6 +75,7 @@ body {
         padding: 2px;
         font-weight: bold; }
 
+/* ESTILOS DEL MAIN */
 main {
   /*border: solid green;*/ }
   main .botonWsp {
@@ -80,7 +84,10 @@ main {
     bottom: 10%;
     right: 1rem;
     z-index: 100;
-    border-radius: 50%; }
+    border-radius: 50%;
+    animation: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
     main .botonWsp .logoWsp {
       width: 4rem;
       border-radius: 50%; }
@@ -100,11 +107,22 @@ main {
     /* estilos exclusivos CONTACTO */
     /* estilos exclusivos CONÓCENOS */ }
     main .principal .news {
-      padding: 5rem;
+      padding: 0.5rem 0rem 0.5rem 0rem;
       display: grid;
+      place-content: center;
       grid-template-rows: auto;
-      grid-template-columns: auto;
+      grid-template-columns: 6fr 6fr;
       grid-template-areas: "card1 card2" "card3 card4"; }
+      main .principal .news div {
+        text-align: center;
+        padding: 0rem 1rem 0.5rem 1rem; }
+        main .principal .news div h4 {
+          font-weight: bold;
+          font-size: 1rem; }
+        main .principal .news div img {
+          width: 60%; }
+        main .principal .news div p {
+          padding-top: 1rem; }
       main .principal .news .news1 {
         grid-area: card1; }
       main .principal .news .news2 {
@@ -113,8 +131,6 @@ main {
         grid-area: card3; }
       main .principal .news .news4 {
         grid-area: card4; }
-      main .principal .news .newsSubtitle {
-        text-align: center; }
     main .principal .productos {
       padding: 1rem;
       display: grid;
@@ -148,23 +164,24 @@ main {
           display: inline-block;
           width: 50%; }
 
+/* ESTILOS DEL FOOTER */
 footer {
   padding: 0.5rem 0rem;
-  background-color: #6881fa; }
-  footer .rrss p {
-    font-weight: bold;
-    text-align: center; }
+  background-color: #53BBAD; }
   footer .containerFooter a {
     text-decoration: none;
-    color: wheat; }
+    color: whitesmoke; }
   footer .containerFooter .footerBlocks {
+    padding: 0rem 0.5rem 0rem 0.5rem;
     width: 100%;
     display: inline-flex;
     align-items: flex-start;
-    justify-content: space-around; }
-    footer .containerFooter .footerBlocks .footerBlocksTitle {
-      font-size: 1.5rem; }
+    justify-content: space-between; }
+    footer .containerFooter .footerBlocks .block {
+      padding: 0.5rem; }
+      footer .containerFooter .footerBlocks .block .footerBlocksTitle {
+        font-size: 1.3rem;
+        font-weight: bold; }
   footer .containerFooter .derechos {
     text-align: center;
-    margin: 1rem 0rem 0.5rem 0rem;
     font-size: 0.8rem; }
