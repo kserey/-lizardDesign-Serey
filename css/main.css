@@ -148,110 +148,14 @@ main .principal {
       grid-area: prod2; }
     main .principal .tipoProd .prod3 {
       grid-area: prod3; }
-  main .principal .formCuerpo {
-    border: solid black;
-    width: 100%;
-    min-height: 100%;
-    padding: 15px;
-    background-color: #009bff;
-    background-image: linear-gradient(to right, #0072ff, #00c6ff); }
-    main .principal .formCuerpo .container-contact1 {
-      /*border: solid black;*/
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center; }
-    main .principal .formCuerpo .contact1-pic {
-      /*border: solid red;*/
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 40%; }
-    main .principal .formCuerpo .textoContacto p {
-      /*border: solid pink;*/
-      line-height: 1.7;
-      font-weight: bold;
-      padding-left: 1rem; }
-    main .principal .formCuerpo .textoContacto ul {
-      /*border: solid slateblue;*/ }
-    main .principal .formCuerpo .textoContacto ul li {
-      list-style-type: circle; }
-    main .principal .formCuerpo .contact1-form {
-      /*border: solid green;*/
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 50%;
-      padding: 2% 0%; }
-    main .principal .formCuerpo input {
-      outline: none;
-      border: none; }
-    main .principal .formCuerpo .textoContacto {
-      padding-top: 2%; }
-    main .principal .formCuerpo .contact1-pic img {
-      max-width: 50%; }
-    main .principal .formCuerpo input.input1 {
-      height: 50px;
-      border-radius: 25px;
-      padding: 0 30px; }
-    main .principal .formCuerpo input .input1 + .shadow-input1 {
-      border-radius: 25px; }
-    main .principal .formCuerpo textarea.input1 {
-      min-height: 150px;
-      border-radius: 25px;
-      padding: 12px 30px; }
-    main .principal .formCuerpo textarea.input1, main .principal .formCuerpo .shadow-input1 {
-      border-radius: 25px; }
-    main .principal .formCuerpo .wrap-input1 {
-      position: relative;
-      width: 100%;
-      z-index: 1;
-      margin-bottom: 20px; }
-    main .principal .formCuerpo .input1 {
-      display: block;
-      width: 100%;
-      background: #e6e6e6;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #74b1ea; }
-    main .principal .formCuerpo .shadow-input1 {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      box-shadow: 0px 0px 0px 0px;
-      color: rgba(87, 184, 70, 0.5); }
-    main .principal .formCuerpo .container-contact1-form-btn {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-    main .principal .formCuerpo .contact1-form-btn {
-      min-width: 193px;
-      height: 50px;
-      border-radius: 25px;
-      background: #1327bd;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    main .principal .formCuerpo .contact1-form-btn:hover {
-      background: #08b8d7; }
-    main .principal .formCuerpo button {
-      border: none;
-      background: transparent; }
-    main .principal .formCuerpo button:hover {
-      cursor: pointer; }
+  main .principal .prodOfertas {
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center; }
+    main .principal .prodOfertas img {
+      width: 150px; }
   main .principal form .formCont {
     display: flex;
     flex-flow: row wrap;
@@ -264,6 +168,12 @@ main .principal {
         margin: 1rem 0rem;
         padding: 0rem 1rem;
         border: none; }
+      main .principal form .formCont .formBlock .boton:hover {
+        background: #5371FF;
+        color: whitesmoke;
+        cursor: pointer;
+        margin: 1rem 0rem;
+        padding: 0rem 1.5rem; }
   main .principal .iconos {
     display: flex;
     flex-flow: row wrap;
