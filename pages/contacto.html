@@ -13,10 +13,6 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!--
-    <link rel="stylesheet" href="../css/main.css">
-    -->
-
     <!--ANIMATE--> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
@@ -167,56 +163,58 @@
             </section>
 
 
-            <div class="container-contact1 formCont">
+            <div class="principal">
 
-                <div class="formCont-complemento">
-                    <img src="../img/logo_A_768x768.png" alt="Logo LizardDesign contacto">
-
-                    <div class="textoContacto">
-                        <p>Cómo puedes comunicarte con nosotros?</p>
-                        <ul>
-                            <li>por whatsapp al +56 9 7810 3737</li>
-                            <li>por correo electrónico a lizardD@gmail.com</li>
-                            <li>en nuestro instagram</li>
-                            <li>o déjanos un mensaje en el formulario de contacto acá mismo</li>
-                        </ul>
-                    </div>
-
-                </div>                                                      
-    
-                <form class="contact1-form">
+                <div class="principalTitle">
+                    <h2>Contáctanos</h2>
+                    <p>
+                        Ya sé, quieres comprar un producto de las <a href="ofertas.html">Ofertas</a> antes de que se lo lleven.
+                        <br>
+                        No? Entonces quizá quieres aclarar algunas dudas antes de hacer tu pedido, o dejarnos alguna sugerencia.
+                        <br>
+                        Cuéntanos acá abajo en el <strong>formulario</strong>, y estaremos encantados de hacer realidad tus ideas. 
+                    </p>
+                </div>
+                
+                <form method="post">
+                    <div class="formCont">
+                        
+                        <div class="formBlock">
+                            <div> 
+                                <h3>Sobre qué hablamos?</h3>
+                                <select class="form-control">
+                                    <option>Quiero comprar!</option>
+                                    <option>Tengo algunas preguntas</option>
+                                    <option>Sugerencias, felicitaciones u otros</option>
+                                </select>                  
+                            </div>
                             
-                    <div class="wrap-input1">
-                        <input class="input1" type="text" placeholder="Cómo te llamas?">
-                        <span class="shadow-input1"></span>
-                    </div>
-    
-                    <div class="wrap-input1">
-                        <input class="input1" type="text" name="Email" placeholder="A qué mail te respondemos?">
-                        <span class="shadow-input1"></span>
-                    </div>
-    
-                    <div class="wrap-input1">
-                        <input class="input1" type="text" name="Asunto" placeholder="Sobre qué quieres hablar?">
-                        <span class="shadow-input1"></span>
-                    </div>
-    
-                    <div class="wrap-input1">
-                        <textarea class="input1" name="Mensaje" placeholder="Cuéntanos qué tienes en mente!"></textarea>
-                        <span class="shadow-input1"></span>
-                    </div>
-    
-                    <div class="container-contact1-form-btn">
-                        <button class="contact1-form-btn formBoton">
-                            <span>
-                                Enviar
-                            </span>
-                        </button>
-                    </div>
+                            <div>
+                                <textarea class="form-control" id="message" name="Mensaje" placeholder="Cuéntanos qué tienes en mente." rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="formBlock">
+                            <h3>Cuéntanos sobre ti</h3>
+
+                            <div>
+                                <input name="Nombre" type="text" placeholder="Cómo te llamas?" class="form-control">
+                            </div>
+
+                            <div>
+                                <input name="email" type="text" placeholder="A qué mail te respondemos?" class="form-control">
+                            </div>
+
+                            <button type="submit" class="boton">Enviar</button>
+
+                        </div>
+                    </div>  
+
 
                 </form>
-                
+                 
             </div>
+
         </main>
 
 

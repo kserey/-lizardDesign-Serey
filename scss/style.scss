@@ -94,6 +94,7 @@ body {
                 
                 a{
                     text-decoration: none;
+                    color: nth($paleta, $n:3);
                 }
     
                 a:link{
@@ -105,7 +106,7 @@ body {
                 }
     
                 a:hover{
-                    @include boton-hover;
+                    @extend %botones ;                
                     margin: 2px;
                     padding: 2px;
                 }
@@ -138,8 +139,7 @@ main{
     }
 
     .principal{
-        padding: 4rem;
-
+        padding: 2rem 4rem;
       
        .principalTitle{
            padding-bottom: 1rem;
@@ -152,10 +152,6 @@ main{
                font-size: 1rem;
            }
        }
-    }
-
-  
-    .principal{
 
         /* estilos exclusivos INDEX */
 
@@ -187,7 +183,6 @@ main{
                 p{
                     padding-top: 1rem;
                 }
-
 
             }
             
@@ -250,8 +245,8 @@ main{
         /* estilos exclusivos OFERTAS */
 
                 
-        .formCont {
-            /*border: solid orange;*/
+        .formCuerpo {
+            border: solid black;
             width: 100%;
             min-height: 100%;
             padding: 15px;
@@ -402,11 +397,34 @@ main{
     
     
         /* estilos exclusivos CONTACTO */
+         
+        form{
 
-        .formBoton{
-            @include boton-hover
+            .formCont{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                
+                .formBlock{
+                    padding: 0rem 2rem;
+
+                    div{
+                        padding: 0.1rem;
+                    }
+
+                    .boton{
+                        @extend %botones ;                
+                        margin: 1rem 0rem;
+                        padding: 0rem 1rem;
+                        border: none;
+                    }
+
+                }
+                
+            } 
+
         }
-
+   
 
 
         /* estilos exclusivos CONÓCENOS */
