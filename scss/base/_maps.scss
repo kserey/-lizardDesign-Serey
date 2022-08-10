@@ -1,0 +1,9 @@
+@import "base/listas";
+
+$boton-hover:(
+    color-bg-hover: nth($paleta, $n:5),
+    color-hover: nth($paleta, $n:3),
+    font-hover: bold,
+    borad-hover: 15px,
+);
+

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.header .headerMenu .subMenu :hover {
+  background-color: #8AE1FA;
+  color: #5371FF;
+  font-weight: bold;
+  border-radius: 15px; }
+
 /* RESET */
 * {
   margin: 0;
@@ -10,30 +16,27 @@
 
 /* ESTILOS GENERALES BODY */
 body {
-  /*border: solid pink;*/
-  background-image: linear-gradient(to bottom right, #8396f8, #5371FF); }
+  background-image: linear-gradient(to right, whitesmoke, #5371FF); }
 
 /* ESTILOS DEL HEADER */
 .header {
   /* ESTILOS DEL MENÚ */
   /* ESTILOS CARRUSEL*/ }
   .header .headerMenu {
+    height: auto;
     width: 100%;
-    background-color: #8396f8;
+    background-image: linear-gradient(to right, whitesmoke, #78468b, #5E0381);
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     z-index: 100;
     /* ESTILOS DEL SUBMENÚ */ }
-    .header .headerMenu .linkMenu {
-      /*border: solid purple;*/ }
-      .header .headerMenu .linkMenu img {
-        width: 7rem; }
+    .header .headerMenu .linkMenu img {
+      width: 7rem; }
     .header .headerMenu .botonBurger {
       background-color: white; }
     .header .headerMenu .menu {
-      /*border: solid yellow;*/
       font-weight: bold;
       font-size: 1.3rem; }
     .header .headerMenu .subMenu {
@@ -43,134 +46,253 @@ body {
       border-radius: 15px; }
     .header .headerMenu .linkMenu, .header .headerMenu .navbar-nav li a {
       color: whitesmoke; }
-    .header .headerMenu .subMenu :hover {
-      background-color: #8AE1FA;
-      color: #5371FF;
-      font-weight: bold;
-      border-radius: 15px; }
   .header .carrusel {
     padding-top: 4rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-    .header .carrusel .carrusel-title {
+    .header .carrusel .carrusel_textos .carrusel-title {
       font-size: 5rem; }
-    .header .carrusel .carrusel-boton {
+    .header .carrusel .carrusel_textos .carrusel-boton {
       display: inline-block;
       background-color: #8AE1FA;
       padding: 0.1rem 0.5rem;
       border-radius: 20rem;
       font-size: 1rem;
       font-weight: bold; }
-      .header .carrusel .carrusel-boton a {
+      .header .carrusel .carrusel_textos .carrusel-boton a {
         text-decoration: none; }
-      .header .carrusel .carrusel-boton a:link {
+      .header .carrusel .carrusel_textos .carrusel-boton a:link {
         color: #5371FF; }
-      .header .carrusel .carrusel-boton a:visited {
+      .header .carrusel .carrusel_textos .carrusel-boton a:visited {
         color: #5371FF; }
-      .header .carrusel .carrusel-boton a:hover {
-        border-radius: 20px;
+      .header .carrusel .carrusel_textos .carrusel-boton a:hover {
+        background-color: #8AE1FA;
+        color: #5371FF;
+        font-weight: bold;
+        border-radius: 15px;
         margin: 2px;
-        padding: 2px;
-        font-weight: bold; }
+        padding: 2px; }
 
 /* ESTILOS DEL MAIN */
-main {
-  /*border: solid green;*/ }
-  main .botonWsp {
-    background-color: #0dc143;
-    position: fixed;
-    bottom: 10%;
-    right: 1rem;
-    z-index: 100;
-    border-radius: 50%;
-    animation: pulse;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; }
-    main .botonWsp .logoWsp {
-      width: 4rem;
-      border-radius: 50%; }
-  main .principal {
-    padding: 2rem; }
-    main .principal .principalTitle {
-      padding-bottom: 1rem; }
-      main .principal .principalTitle h2 {
-        font-size: 1.5rem; }
-      main .principal .principalTitle h3 {
+main .botonWsp {
+  background-color: #0dc143;
+  position: fixed;
+  bottom: 10%;
+  right: 1rem;
+  z-index: 100;
+  border-radius: 50%;
+  animation: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; }
+  main .botonWsp .logoWsp {
+    width: 3rem;
+    border-radius: 50%; }
+
+main .principal {
+  padding: 4rem; }
+  main .principal .principalTitle {
+    padding-bottom: 1rem; }
+    main .principal .principalTitle h2 {
+      font-size: 1.5rem; }
+    main .principal .principalTitle h3 {
+      font-size: 1rem; }
+
+main .principal {
+  /* estilos exclusivos INDEX */
+  /* estilos exclusivos PRODUCTOS */
+  /* estilos exclusivos ESTAMPADOS Y PAPELERÍA */
+  /* estilos exclusivos OFERTAS */
+  /* estilos exclusivos CONTACTO */
+  /* estilos exclusivos CONÓCENOS */ }
+  main .principal .news {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    display: grid;
+    place-content: center;
+    grid-template-rows: auto;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: "card1 card2" "card3 card4"; }
+    main .principal .news div {
+      text-align: center;
+      padding: 0rem 1rem 0.5rem 1rem; }
+      main .principal .news div h4 {
+        font-weight: bold;
         font-size: 1rem; }
-  main .principal {
-    /* estilos exclusivos INDEX */
-    /* estilos exclusivos PRODUCTOS */
-    /* estilos exclusivos ESTAMPADOS Y PAPELERÍA */
-    /* estilos exclusivos OFERTAS */
-    /* estilos exclusivos CONTACTO */
-    /* estilos exclusivos CONÓCENOS */ }
-    main .principal .news {
-      padding: 0.5rem 0rem 0.5rem 0rem;
-      display: grid;
-      place-content: center;
-      grid-template-rows: auto;
-      grid-template-columns: 6fr 6fr;
-      grid-template-areas: "card1 card2" "card3 card4"; }
-      main .principal .news div {
-        text-align: center;
-        padding: 0rem 1rem 0.5rem 1rem; }
-        main .principal .news div h4 {
-          font-weight: bold;
-          font-size: 1rem; }
-        main .principal .news div img {
-          width: 60%; }
-        main .principal .news div p {
-          padding-top: 1rem; }
-      main .principal .news .news1 {
-        grid-area: card1; }
-      main .principal .news .news2 {
-        grid-area: card2; }
-      main .principal .news .news3 {
-        grid-area: card3; }
-      main .principal .news .news4 {
-        grid-area: card4; }
-    main .principal .productos {
-      padding: 1rem;
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: auto;
-      grid-template-areas: "estampados papeleria"; }
-      main .principal .productos .prod1 {
-        grid-area: estampados; }
-      main .principal .productos .prod2 {
-        grid-area: papeleria; }
-    main .principal .tipoProd {
-      padding: 1rem;
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: auto;
-      grid-template-areas: "prod1 prod2 prod3"; }
-      main .principal .tipoProd .prod1 {
-        grid-area: prod1; }
-      main .principal .tipoProd .prod2 {
-        grid-area: prod2; }
-      main .principal .tipoProd .prod3 {
-        grid-area: prod3; }
-    main .principal .iconos {
+      main .principal .news div img {
+        width: 60%; }
+      main .principal .news div p {
+        padding-top: 1rem; }
+    main .principal .news .news1 {
+      grid-area: card1; }
+    main .principal .news .news2 {
+      grid-area: card2; }
+    main .principal .news .news3 {
+      grid-area: card3; }
+    main .principal .news .news4 {
+      grid-area: card4; }
+  main .principal .productos {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "estampados papeleria"; }
+    main .principal .productos .prod1 {
+      grid-area: estampados; }
+    main .principal .productos .prod2 {
+      grid-area: papeleria; }
+  main .principal .tipoProd {
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: "prod1 prod2 prod3"; }
+    main .principal .tipoProd .prod1 {
+      grid-area: prod1; }
+    main .principal .tipoProd .prod2 {
+      grid-area: prod2; }
+    main .principal .tipoProd .prod3 {
+      grid-area: prod3; }
+  main .principal .formCont {
+    /*border: solid orange;*/
+    width: 100%;
+    min-height: 100%;
+    padding: 15px;
+    background-color: #009bff;
+    background-image: linear-gradient(to right, #0072ff, #00c6ff); }
+    main .principal .formCont .container-contact1 {
+      /*border: solid black;*/
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; }
+    main .principal .formCont .contact1-pic {
+      /*border: solid red;*/
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 40%; }
+    main .principal .formCont .textoContacto p {
+      /*border: solid pink;*/
+      line-height: 1.7;
+      font-weight: bold;
+      padding-left: 1rem; }
+    main .principal .formCont .textoContacto ul {
+      /*border: solid slateblue;*/ }
+    main .principal .formCont .textoContacto ul li {
+      list-style-type: circle; }
+    main .principal .formCont .contact1-form {
+      /*border: solid green;*/
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50%;
+      padding: 2% 0%; }
+    main .principal .formCont input {
+      outline: none;
+      border: none; }
+    main .principal .formCont .textoContacto {
+      padding-top: 2%; }
+    main .principal .formCont .contact1-pic img {
+      max-width: 50%; }
+    main .principal .formCont input.input1 {
+      height: 50px;
+      border-radius: 25px;
+      padding: 0 30px; }
+    main .principal .formCont input .input1 + .shadow-input1 {
+      border-radius: 25px; }
+    main .principal .formCont textarea.input1 {
+      min-height: 150px;
+      border-radius: 25px;
+      padding: 12px 30px; }
+    main .principal .formCont textarea.input1, main .principal .formCont .shadow-input1 {
+      border-radius: 25px; }
+    main .principal .formCont .wrap-input1 {
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      margin-bottom: 20px; }
+    main .principal .formCont .input1 {
+      display: block;
+      width: 100%;
+      background: #e6e6e6;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #74b1ea; }
+    main .principal .formCont .shadow-input1 {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 0px 0px 0px;
+      color: rgba(87, 184, 70, 0.5); }
+    main .principal .formCont .container-contact1-form-btn {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    main .principal .formCont .contact1-form-btn {
+      min-width: 193px;
+      height: 50px;
+      border-radius: 25px;
+      background: #1327bd;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #fff;
       display: flex;
       justify-content: center;
-      background-color: white; }
-      main .principal .iconos div {
-        width: 3fr;
-        justify-items: center; }
-        main .principal .iconos div img {
-          display: inline-block;
-          width: 50%; }
+      align-items: center; }
+    main .principal .formCont .contact1-form-btn:hover {
+      background: #08b8d7; }
+    main .principal .formCont button {
+      border: none;
+      background: transparent; }
+    main .principal .formCont button:hover {
+      cursor: pointer; }
+  main .principal .formBoton {
+    background-color: #8AE1FA;
+    color: #5371FF;
+    font-weight: bold;
+    border-radius: 15px; }
+  main .principal .iconos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline; }
+    main .principal .iconos div {
+      width: 15%;
+      border: solid green;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      justify-items: center; }
+      main .principal .iconos div img {
+        width: 100%;
+        padding-bottom: 1rem; }
+  main .principal .preguntas {
+    padding-top: 1rem; }
+    main .principal .preguntas .acordeon {
+      background-color: turquoise; }
+    main .principal .preguntas .resp_acordeon {
+      background-color: purple; }
+    main .principal .preguntas .div_acordeon {
+      border-radius: 50%; }
 
 /* ESTILOS DEL FOOTER */
 footer {
-  padding: 0.5rem 0rem;
-  background-color: #53BBAD; }
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(to right, whitesmoke, #8ac4bc, #53BBAD); }
   footer .containerFooter a {
     text-decoration: none;
-    color: whitesmoke; }
+    color: #5E0381; }
   footer .containerFooter .footerBlocks {
     padding: 0rem 0.5rem 0rem 0.5rem;
     width: 100%;
@@ -182,6 +304,10 @@ footer {
       footer .containerFooter .footerBlocks .block .footerBlocksTitle {
         font-size: 1.3rem;
         font-weight: bold; }
+      footer .containerFooter .footerBlocks .block span {
+        display: block; }
   footer .containerFooter .derechos {
     text-align: center;
     font-size: 0.8rem; }
+    footer .containerFooter .derechos a {
+      color: whitesmoke; }

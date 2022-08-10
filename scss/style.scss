@@ -2,6 +2,8 @@
 @import "base/variables";
 @import "base/mixin";
 @import "base/listas";
+@import "base/maps";
+@import "base/extend";
 
 /* RESET */
 *{
@@ -16,11 +18,7 @@
 /* ESTILOS GENERALES BODY */
 
 body {
-    /*border: solid pink;*/
-    background-image: linear-gradient(to bottom right, (nth($paleta-pastel, $n:3)), (nth($paleta, $n:3)))
-
-
-
+    background-image: linear-gradient(to right,(nth($paleta-pastel, $n:1)), (nth($paleta, $n:3)))
 }
 
 /* ESTILOS DEL HEADER */
@@ -29,18 +27,18 @@ body {
     /* ESTILOS DEL MENÚ */
 
     .headerMenu{
-    width: 100%;
-    background-color: nth($paleta-pastel, $n:3);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    z-index: 100;    
+        height: auto;
+        width: 100%;
+        background-image: linear-gradient(to right,(nth($paleta-pastel, $n:1)),(nth($paleta-pastel, $n:4)),(nth($paleta, $n:4)));
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        z-index: 100;    
 
         .linkMenu{
-            /*border: solid purple;*/
             img{
-            width: 7rem;
+                width: 7rem;
             }   
         }
             
@@ -49,7 +47,6 @@ body {
         }
 
         .menu{
-            /*border: solid yellow;*/
             font-weight: bold;
             font-size: 1.3rem;
         }
@@ -68,10 +65,7 @@ body {
         }
 
         .subMenu :hover{
-            background-color:nth($paleta, $n:5);
-            color: nth($paleta, $n:3);
-            font-weight: bold;
-            border-radius: 15px;
+            @extend %botones ;
         }
     }
 
@@ -83,48 +77,47 @@ body {
         justify-content: center;
         align-items: center;
 
-        .carrusel-title{
-            font-size: 5rem;
-        }
-
-        .carrusel-boton{
-            display: inline-block;      
-            background-color: nth($paleta, $n:5);
-            padding: 0.1rem 0.5rem;
-            border-radius: 20rem;
-            font-size: 1rem;
-            font-weight: bold;
+        .carrusel_textos{
             
-            a{
-                text-decoration: none;
-            }
 
-            a:link{
-                color: nth($paleta, $n:3);
+            .carrusel-title{
+                font-size: 5rem;
             }
-
-            a:visited{
-                color: nth($paleta, $n:3);
-            }
-
-            a:hover{
-                border-radius: 20px;
-                margin: 2px;
-                padding: 2px;
+    
+            .carrusel-boton{
+                display: inline-block;      
+                background-color: nth($paleta, $n:5);
+                padding: 0.1rem 0.5rem;
+                border-radius: 20rem;
+                font-size: 1rem;
                 font-weight: bold;
+                
+                a{
+                    text-decoration: none;
+                }
+    
+                a:link{
+                    color: nth($paleta, $n:3);
+                }
+    
+                a:visited{
+                    color: nth($paleta, $n:3);
+                }
+    
+                a:hover{
+                    @include boton-hover;
+                    margin: 2px;
+                    padding: 2px;
+                }
+    
             }
-
         }
-
     }
-
 }
 
 /* ESTILOS DEL MAIN */
 
 main{
-    /*border: solid green;*/
-
 
     .botonWsp{
         background-color: $color-wsp;
@@ -138,14 +131,14 @@ main{
         animation-iteration-count: infinite;
       
         .logoWsp{
-            width: 4rem;
+            width: 3rem;
             border-radius: 50%;
         }
     
     }
 
     .principal{
-        padding: 2rem;
+        padding: 4rem;
 
       
        .principalTitle{
@@ -232,6 +225,7 @@ main{
             }       
 
         }
+
         /* estilos exclusivos ESTAMPADOS Y PAPELERÍA */
         .tipoProd{
             padding: 1rem;
@@ -253,32 +247,217 @@ main{
 
         }
     
-    
-    
         /* estilos exclusivos OFERTAS */
+
+                
+        .formCont {
+            /*border: solid orange;*/
+            width: 100%;
+            min-height: 100%;
+            padding: 15px;
+        
+            background-color: #009bff;    background-image: linear-gradient(to right, #0072ff , #00c6ff);
+        
+
+            .container-contact1 {
+                /*border: solid black;*/
+                background: #fff;
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .contact1-pic {
+                /*border: solid red;*/
+                overflow:hidden;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 40%;
+            }
+
+            .textoContacto p {
+                /*border: solid pink;*/
+                line-height: 1.7;
+                font-weight: bold;
+                padding-left: 1rem;
+            }
+
+            .textoContacto ul {
+                /*border: solid slateblue;*/
+            }
+
+            .textoContacto ul li {
+                list-style-type:circle;
+            }
+
+            .contact1-form {
+                /*border: solid green;*/
+                overflow:hidden;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 50%;
+                padding: 2% 0%;
+            }
+
+            input {
+                outline: none;
+                border: none;
+            }
+
+            .textoContacto{
+                padding-top: 2%;  
+            }
+
+            .contact1-pic img {
+                max-width: 50%;
+            }
+
+            input.input1 {
+                height: 50px;
+                border-radius: 25px;
+                padding: 0 30px;
+            }
+
+            input .input1 + .shadow-input1 {
+                border-radius: 25px;
+            }
+            
+            textarea.input1 {
+                min-height: 150px;
+                border-radius: 25px;
+                padding: 12px 30px;
+            }
+
+            textarea.input1, .shadow-input1 {
+                border-radius: 25px;
+            }
+            
+            .wrap-input1 {
+                position: relative;
+                width: 100%;
+                z-index: 1;
+                margin-bottom: 20px;
+            }
+            
+            .input1 {
+                display: block;
+                width: 100%;
+                background: #e6e6e6;
+                font-size: 15px;
+                line-height: 1.5;
+                color: #74b1ea;
+            }
+            
+            .shadow-input1 {
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0px 0px 0px 0px;
+                color: rgba(87,184,70, 0.5);
+            }
+            
+            .container-contact1-form-btn {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contact1-form-btn {
+                min-width: 193px;
+                height: 50px;
+                border-radius: 25px;
+                background: #1327bd;
+                font-size: 15px;
+                line-height: 1.5;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contact1-form-btn:hover {
+                background: #08b8d7;
+            }
+
+            button {
+                border: none;
+                background: transparent;
+            }
+
+            button:hover {
+                cursor: pointer;
+            }
+
+        }
     
     
         /* estilos exclusivos CONTACTO */
-    
+
+        .formBoton{
+            @include boton-hover
+        }
+
+
+
         /* estilos exclusivos CONÓCENOS */
 
         .iconos{
             display: flex;
-            justify-content: center;
-            background-color: white;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: baseline;
+
 
             div{
-                width: 3fr;
+                width: 15%;
+                border: solid green;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
                 justify-items: center;
-         
+
                 img{
-                    display: inline-block;
-                    width: 50%;
+                    width:100%;
+                    padding-bottom: 1rem;
                 }
+            }
+
+
+
+        }
+
+        .preguntas{
+            padding-top: 1rem;
+        
+
+            .acordeon{
+                background-color: turquoise;
 
             }
 
- 
+            .resp_acordeon{
+                background-color: purple;
+            }
+
+            .div_acordeon{
+                border-radius: 50%;
+
+            }
+
+
+
+
+
 
         }
     
@@ -292,14 +471,14 @@ main{
 /* ESTILOS DEL FOOTER */
 
 footer{
-    padding: 0.5rem 0rem;
-    background-color: nth($paleta, $n:7);
+    padding: 0.5rem 1rem;
+    background-image: linear-gradient(to right,(nth($paleta-pastel, $n:1)),(nth($paleta-pastel, $n:7)), (nth($paleta, $n:7)));
 
     .containerFooter{
 
         a{
             text-decoration: none;
-            color: nth($paleta-pastel, $n:1);
+            color: nth($paleta, $n:4);
         }
 
         .footerBlocks{
@@ -316,6 +495,11 @@ footer{
                     font-size: 1.3rem;
                     font-weight: bold;
                 }
+
+                span{
+                    display: block;
+                }
+                
             }
 
         }
@@ -323,6 +507,10 @@ footer{
         .derechos{
             text-align: center;
             font-size: 0.8rem;
+
+            a{
+                color: nth($paleta-pastel, $n:1);;
+            }
         }
 
     }

@@ -1,3 +1,38 @@
-@mixin flex-row{
+
+@mixin reset{
+
+}
+
+@mixin prefixer($property, $value, $prefixes: webkit moz ms o) {
+    #{$property}: #{$value};
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: #{$value};
+    }
+  }
+
+@mixin img-prod ($width, $height){
+    width: $width;
+    height: $height;    
+}
+
+@mixin animaciones ($animacion){
+    -webkit-animation: $animacion ;
+    -o-animation: $animacion;
+    -moz-animation: $animacion;
+    animation: $animacion;  
+}
+
+@mixin navbar {
     
+}
+
+@mixin footer {
+    
+}
+
+@mixin boton-hover {
+    background-color:nth($paleta, $n:5);
+    color: nth($paleta, $n:3);
+    font-weight: bold;
+    border-radius: 15px;    
 }

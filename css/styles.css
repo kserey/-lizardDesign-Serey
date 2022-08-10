@@ -394,28 +394,6 @@ button:hover {
 	cursor: pointer;
 }
 
-/* ESTILOS DEL FOOTER */
-
-footer{
-    /*border: solid yellow;*/
-    display: flex;
-    padding: 1rem;
-    background-color: #8AE2FB;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-}
-
-footer a img{
-    width: 2rem;
-    border-radius: 50%;
-}
-
-footer p{
-    /*border: solid green;*/
-    padding-right: 0.8rem;
-}
-
 
 /* MEDIA QUERIES*/
 
