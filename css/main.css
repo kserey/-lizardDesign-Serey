@@ -181,7 +181,6 @@ main .principal {
     align-items: baseline; }
     main .principal .iconos div {
       width: 15%;
-      border: solid green;
       text-align: center;
       align-items: center;
       justify-content: center;
