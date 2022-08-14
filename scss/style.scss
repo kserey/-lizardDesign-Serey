@@ -4,6 +4,14 @@
 @import "base/listas";
 @import "base/maps";
 @import "base/extend";
+@import "base/styles_conocenos";
+@import "base/styles_contacto";
+@import "base/styles_estapados";
+@import "base/styles_index";
+@import "base/styles_ofertas";
+@import "base/styles_papeleria";
+@import "base/styles_productos";
+
 
 /* RESET */
 *{
@@ -78,10 +86,15 @@ body {
         align-items: center;
 
         .carrusel_textos{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
 
-            .carrusel-title{
+            .carrusel_title{
                 font-size: 5rem;
+
             }
     
             .carrusel-boton{
