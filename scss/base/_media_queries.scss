@@ -1,0 +1,227 @@
+/* RESPONSIVE */
+
+/*Móviles en horizontal o tablets en vertical DESDE 400PX*/
+@media (min-width: 400px) {
+    body{
+        /* HEADER: NAVBAR Y CARRUSEL */
+        .header{
+            .carrusel{
+                display: block;
+                padding-top: 4.3rem;                
+                .carrusel-inner{        
+                    .carrusel-item{        
+                        .carrusel-contenido{
+                            h1{
+                                font-size: 1.5rem; 
+                            }
+                            p{
+                                display: none;
+                            }
+                            .carrusel_boton{
+                                display: none;
+
+                            }
+                        }                        
+                    }
+                }
+                .carrusel-img-botones{
+                    display: flex;
+                }        
+            }
+        }
+    
+
+        /* MAIN: CONTENIDO PPAL */
+        main{
+            .principal{
+                padding: 1.5rem;
+              
+               .principalTitle{
+                    @include encabezados-index(1.8rem)
+               }
+            }
+
+            .news{
+
+                div{
+                    h4{
+
+                    }
+
+                    img{
+                        width: auto;
+
+                    }
+
+                    p{
+                        
+                    }
+                }
+            }
+        }
+
+        
+        /* FOOTER: PIE DE PÁGINA */
+
+        footer{
+            @include footer-tamanos(1.2rem);
+
+            .container{
+                max-width: 768px;
+
+                .footer-elements{
+                    
+                    .footer-elemento-indiv{
+
+                        h5{
+   
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+ 
+/*Móviles en horizontal o tablets en vertica  DESDE 768PX*/
+@media (min-width: 768px) {
+    body{
+        /* HEADER: NAVBAR Y CARRUSEL */
+        .header{
+            .carrusel{
+                .carrusel-inner{        
+                    .carrusel-item{        
+                        .carrusel-contenido{
+                            h1{
+                                font-size: 1.8rem;        
+                            }               
+                            p{
+                                display: block;
+                                font-size: 1.2rem;
+                            }
+                            .carrusel_boton{
+                                display: inline;
+                                margin: 0rem 1rem;
+                                padding: 0.1rem 0.5rem;
+                                font-size: 1rem;    
+                            }
+                        }                        
+                    }
+                }        
+            }
+        }
+
+
+
+        /* MAIN: CONTENIDO PPAL */
+        main{
+            .principal{
+                padding: 1.5rem 3rem;
+              
+               .principalTitle{
+                    @include encabezados-index(2rem)
+               }
+            }
+
+        }
+
+        /* FOOTER: PIE DE PÁGINA */
+
+        footer{
+            @include footer-tamanos(1.3rem);
+            .container{
+                max-width: 1024px;
+                .footer-elements{
+                    div{
+                        h5{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+ 
+/*Tablets en horizonal y escritorios normales  DESDE 1024PX*/
+@media (min-width: 1024px) { 
+    body{
+        /* HEADER: NAVBAR Y CARRUSEL */
+        .header{
+            .carrusel{
+                .carrusel-inner{        
+                    .carrusel-item{        
+                        .carrusel-contenido{
+                            h1{
+                                font-size: 2rem;        
+                            }               
+                            p{
+                                display: block;
+                                font-size: 1.5rem;
+                            }
+                            .carrusel_boton{
+                                display: inline;
+                                margin: 0rem 1rem;
+                                padding: 0.1rem 0.5rem;
+                                font-size: 1rem;    
+                            }
+                        }                       
+                    }
+                }
+            }
+        }
+    
+
+        /* MAIN: CONTENIDO PPAL */
+        main{
+
+            .principal{
+                padding: 1.5rem 3rem;
+              
+               .principalTitle{
+                    @include encabezados-index(2.2rem)
+               }
+            }
+    
+            .news{
+    
+                div{
+                    h4{
+    
+                    }
+    
+                    img{
+    
+                    }
+    
+                    p{
+                        
+                    }
+                }
+            }
+        }
+        
+        /* FOOTER: PIE DE PÁGINA */
+
+        footer{
+            @include footer-tamanos(1.3rem);
+            .container{
+                max-width: 100%;
+                .footer-elements{
+                    div{
+                        h5{
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
