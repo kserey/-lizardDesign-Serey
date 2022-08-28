@@ -2,155 +2,157 @@
 /* RESPONSIVE */
 /*Móviles en horizontal o tablets en vertical DESDE 400PX*/
 @media (min-width: 400px) {
-  body {
+  body .contenedorPrincipal {
     /* HEADER: NAVBAR Y CARRUSEL */
     /* MAIN: CONTENIDO PPAL */
     /* FOOTER: PIE DE PÁGINA */ }
-    body .header .carrusel {
+    body .contenedorPrincipal .header .carrusel {
       display: block;
       padding-top: 4.3rem; }
-      body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+      body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
         font-size: 1.5rem; }
-      body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+      body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
         display: none; }
-      body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
+      body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
         display: none; }
-      body .header .carrusel .carrusel-img-botones {
+      body .contenedorPrincipal .header .carrusel .carrusel-img-botones {
         display: flex; }
-    body main .principal {
+    body .contenedorPrincipal main .principal {
       padding: 1.5rem; }
-      body main .principal .principalTitle {
+      body .contenedorPrincipal main .principal .principalTitle {
         padding-bottom: 1rem;
         text-align: center; }
-        body main .principal .principalTitle h2 {
+        body .contenedorPrincipal main .principal .principalTitle h2 {
           font-size: 1.8rem;
           margin: 0; }
-        body main .principal .principalTitle h3 {
+        body .contenedorPrincipal main .principal .principalTitle h3 {
           font-size: 1.35rem;
           margin: 0;
           padding: 1rem; }
-        body main .principal .principalTitle p {
+        body .contenedorPrincipal main .principal .principalTitle p {
           font-size: 1.08rem;
           margin: 0; }
-        body main .principal .principalTitle span {
+        body .contenedorPrincipal main .principal .principalTitle span {
           font-size: 1.44rem;
           margin: 0;
           display: block;
           font-weight: bold;
           padding: 0.5rem 0rem; }
-        body main .principal .principalTitle a:link {
+        body .contenedorPrincipal main .principal .principalTitle a:link {
           color: #5E0381; }
-        body main .principal .principalTitle a:visited {
+        body .contenedorPrincipal main .principal .principalTitle a:visited {
           color: #5E0381; }
-    body main .news div img {
+    body .contenedorPrincipal main .news div img {
       width: auto; }
-    body footer h5 {
+    body .contenedorPrincipal footer h5 {
       font-size: 1.2rem; }
-    body footer ul {
+    body .contenedorPrincipal footer ul {
       font-size: 1.02rem; }
-    body footer p {
+    body .contenedorPrincipal footer p {
       font-size: 0.96rem; }
-    body footer .container {
+    body .contenedorPrincipal footer .container {
       max-width: 768px; } }
 
 /*Móviles en horizontal o tablets en vertica  DESDE 768PX*/
 @media (min-width: 768px) {
-  body {
+  body .contenedorPrincipal {
     /* HEADER: NAVBAR Y CARRUSEL */
     /* MAIN: CONTENIDO PPAL */
     /* FOOTER: PIE DE PÁGINA */ }
-    body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+    body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
       font-size: 1.8rem; }
-    body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+    body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
       display: block;
       font-size: 1.2rem; }
-    body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
+    body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
       display: inline;
       margin: 0rem 1rem;
       padding: 0.1rem 0.5rem;
       font-size: 1rem; }
-    body main .principal {
+    body .contenedorPrincipal main .principal {
       padding: 1.5rem 3rem; }
-      body main .principal .principalTitle {
+      body .contenedorPrincipal main .principal .principalTitle {
         padding-bottom: 1rem;
         text-align: center; }
-        body main .principal .principalTitle h2 {
+        body .contenedorPrincipal main .principal .principalTitle h2 {
           font-size: 2rem;
           margin: 0; }
-        body main .principal .principalTitle h3 {
+        body .contenedorPrincipal main .principal .principalTitle h3 {
           font-size: 1.5rem;
           margin: 0;
           padding: 1rem; }
-        body main .principal .principalTitle p {
+        body .contenedorPrincipal main .principal .principalTitle p {
           font-size: 1.2rem;
           margin: 0; }
-        body main .principal .principalTitle span {
+        body .contenedorPrincipal main .principal .principalTitle span {
           font-size: 1.6rem;
           margin: 0;
           display: block;
           font-weight: bold;
           padding: 0.5rem 0rem; }
-        body main .principal .principalTitle a:link {
+        body .contenedorPrincipal main .principal .principalTitle a:link {
           color: #5E0381; }
-        body main .principal .principalTitle a:visited {
+        body .contenedorPrincipal main .principal .principalTitle a:visited {
           color: #5E0381; }
-    body footer h5 {
+    body .contenedorPrincipal footer h5 {
       font-size: 1.3rem; }
-    body footer ul {
+    body .contenedorPrincipal footer ul {
       font-size: 1.105rem; }
-    body footer p {
+    body .contenedorPrincipal footer p {
       font-size: 1.04rem; }
-    body footer .container {
-      max-width: 1024px; } }
+    body .contenedorPrincipal footer .container {
+      max-width: 1024px; }
+      body .contenedorPrincipal footer .container .row div h5 {
+        height: 50px; } }
 
 /*Tablets en horizonal y escritorios normales  DESDE 1024PX*/
 @media (min-width: 1024px) {
-  body {
+  body .contenedorPrincipal {
     /* HEADER: NAVBAR Y CARRUSEL */
     /* MAIN: CONTENIDO PPAL */
     /* FOOTER: PIE DE PÁGINA */ }
-    body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+    body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
       font-size: 2rem; }
-    body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+    body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
       display: block;
       font-size: 1.5rem; }
-    body .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
+    body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
       display: inline;
       margin: 0rem 1rem;
       padding: 0.1rem 0.5rem;
       font-size: 1rem; }
-    body main .principal {
+    body .contenedorPrincipal main .principal {
       padding: 1.5rem 3rem; }
-      body main .principal .principalTitle {
+      body .contenedorPrincipal main .principal .principalTitle {
         padding-bottom: 1rem;
         text-align: center; }
-        body main .principal .principalTitle h2 {
+        body .contenedorPrincipal main .principal .principalTitle h2 {
           font-size: 2.2rem;
           margin: 0; }
-        body main .principal .principalTitle h3 {
+        body .contenedorPrincipal main .principal .principalTitle h3 {
           font-size: 1.65rem;
           margin: 0;
           padding: 1rem; }
-        body main .principal .principalTitle p {
+        body .contenedorPrincipal main .principal .principalTitle p {
           font-size: 1.32rem;
           margin: 0; }
-        body main .principal .principalTitle span {
+        body .contenedorPrincipal main .principal .principalTitle span {
           font-size: 1.76rem;
           margin: 0;
           display: block;
           font-weight: bold;
           padding: 0.5rem 0rem; }
-        body main .principal .principalTitle a:link {
+        body .contenedorPrincipal main .principal .principalTitle a:link {
           color: #5E0381; }
-        body main .principal .principalTitle a:visited {
+        body .contenedorPrincipal main .principal .principalTitle a:visited {
           color: #5E0381; }
-    body footer h5 {
+    body .contenedorPrincipal footer h5 {
       font-size: 1.3rem; }
-    body footer ul {
+    body .contenedorPrincipal footer ul {
       font-size: 1.105rem; }
-    body footer p {
+    body .contenedorPrincipal footer p {
       font-size: 1.04rem; }
-    body footer .container {
+    body .contenedorPrincipal footer .container {
       max-width: 100%; } }
 
 * {
@@ -161,13 +163,13 @@
   list-style: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
 
-.header .headerMenu, footer .derechos {
+body .contenedorPrincipal .header .headerMenu, body .contenedorPrincipal footer .derechos {
   background-image: linear-gradient(to right, #f7b96e, #5E0381); }
 
 body {
   background-image: linear-gradient(to right, #f5f5f5, #5371FF); }
 
-.header .headerMenu {
+body .contenedorPrincipal .header .headerMenu {
   height: auto;
   width: 100%;
   display: flex;
@@ -176,23 +178,23 @@ body {
   position: fixed;
   z-index: 100; }
 
-.header .headerMenu .menu {
+body .contenedorPrincipal .header .headerMenu .menu {
   font-weight: bold;
   font-size: 1.3rem; }
 
-.header .headerMenu .subMenu {
+body .contenedorPrincipal .header .headerMenu .subMenu {
   border: solid #f5f5f5;
   padding: 5px;
   background-color: #5371FF;
   border-radius: 15px; }
 
-.header .headerMenu .subMenu :hover, .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
+body .contenedorPrincipal .header .headerMenu .subMenu :hover, body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
   background-color: #8AE1FA;
   color: #5371FF;
   font-weight: bold;
   border-radius: 15px; }
 
-main .botonWsp {
+body .contenedorPrincipal main .botonWsp {
   background-color: #0dc143;
   position: fixed;
   bottom: 10%;
@@ -203,22 +205,22 @@ main .botonWsp {
   animation-duration: 3s;
   animation-iteration-count: infinite; }
 
-main .botonWsp .logoWsp {
+body .contenedorPrincipal main .botonWsp .logoWsp {
   width: 3rem;
   border-radius: 50%; }
 
-body main .principal .principalTitle h2, main .principal .principalTitle h2 {
+body .contenedorPrincipal main .principal .principalTitle h2, main .principal .principalTitle h2 {
   text-align: left;
   text-shadow: 1px 1px #f5f5f5;
   font-weight: bold; }
 
-body main .principal .principalTitle a, main .principal .principalTitle a, main .news div h4, footer .container .row div ul li a {
+body .contenedorPrincipal main .principal .principalTitle a, main .principal .principalTitle a, main .news div h4, body .contenedorPrincipal footer .container .row div ul li a {
   text-decoration: none;
   color: #5E0381;
   text-shadow: 1px 1px #8396f8;
   font-weight: bold; }
 
-footer .derechos a {
+body .contenedorPrincipal footer .derechos a {
   text-decoration: none;
   color: #f5f5f5;
   text-shadow: 1px 1px #8396f8;
@@ -271,89 +273,86 @@ main .news {
 */
 /* RESET */
 /* ESTILOS GENERALES BODY */
-.header {
-  /* ESTILOS DEL MENÚ */
-  /* ESTILOS CARRUSEL*/ }
-  .header .headerMenu {
-    /* ESTILOS DEL SUBMENÚ */ }
-    .header .headerMenu .linkMenu img {
-      width: 7rem; }
-    .header .headerMenu .botonBurger {
-      background-color: white; }
-    .header .headerMenu .linkMenu, .header .headerMenu .navbar-nav li a {
-      color: #f5f5f5; }
-  .header .carrusel {
-    display: none; }
-    .header .carrusel .carrusel-inner .carrusel-item img {
-      opacity: 0.7; }
-    .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido {
-      margin: 0;
-      padding: 0rem;
-      display: flexbox; }
-      .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
-        font-size: 1.5rem; }
-      .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
-        display: flexbox;
-        margin: 0rem 1rem;
-        padding: 0.1rem 0.5rem;
-        font-size: 0.8rem;
-        width: max-content; }
-        .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a {
-          text-decoration: none;
-          color: #5371FF; }
-        .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:link {
-          color: #5371FF; }
-        .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:visited {
-          color: #5371FF; }
-        .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:hover {
-          font-weight: bolder;
-          font-size: larger; }
-    .header .carrusel .carrusel-img-botones {
-      display: none;
-      margin: 0; }
-
-/* ESTILOS DEL FOOTER */
-footer h5 {
-  font-size: 1.2rem; }
-
-footer ul {
-  font-size: 1.02rem; }
-
-footer p {
-  font-size: 0.96rem; }
-
-footer .container {
-  box-sizing: border-box;
-  margin: 0 0px;
-  padding: 0px 15px 10px 15px;
-  text-align: left;
-  max-width: 400px; }
-  footer .container .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px; }
-    footer .container .row div {
-      position: relative;
-      padding: 0 20px 15px 20px;
-      display: block; }
-      footer .container .row div h5 {
-        text-transform: uppercase;
-        margin: 0 0 20px 0;
-        padding-bottom: 15px;
-        border-bottom: 2px solid #5E0381;
-        position: relative;
-        height: 50px; }
-      footer .container .row div ul {
+body .contenedorPrincipal {
+  /* HEADER: NAVBAR Y CARRUSEL */
+  /* ESTILOS DEL MAIN */
+  /* ESTILOS DEL FOOTER */ }
+  body .contenedorPrincipal .header {
+    /* ESTILOS DEL MENÚ */
+    /* ESTILOS CARRUSEL*/ }
+    body .contenedorPrincipal .header .headerMenu {
+      /* ESTILOS DEL SUBMENÚ */ }
+      body .contenedorPrincipal .header .headerMenu .linkMenu img {
+        width: 7rem; }
+      body .contenedorPrincipal .header .headerMenu .botonBurger {
+        background-color: white; }
+      body .contenedorPrincipal .header .headerMenu .linkMenu, body .contenedorPrincipal .header .headerMenu .navbar-nav li a {
+        color: #f5f5f5; }
+    body .contenedorPrincipal .header .carrusel {
+      display: none; }
+      body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item img {
+        opacity: 0.7; }
+      body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido {
         margin: 0;
-        padding-left: 15px;
-        padding-bottom: 15px; }
-        footer .container .row div ul li a {
-          text-shadow: none; }
-          footer .container .row div ul li a img {
-            padding: 0.2rem; }
-
-footer .derechos {
-  color: #f5f5f5;
-  text-align: center;
-  margin: 0;
-  padding: 0.8rem; }
+        padding: 0rem;
+        display: flexbox; }
+        body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+          font-size: 1.5rem; }
+        body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
+          display: flexbox;
+          margin: 0rem 1rem;
+          padding: 0.1rem 0.5rem;
+          font-size: 0.8rem;
+          width: max-content; }
+          body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a {
+            text-decoration: none;
+            color: #5371FF; }
+          body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:link {
+            color: #5371FF; }
+          body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:visited {
+            color: #5371FF; }
+          body .contenedorPrincipal .header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:hover {
+            font-weight: bolder;
+            font-size: larger; }
+      body .contenedorPrincipal .header .carrusel .carrusel-img-botones {
+        display: none;
+        margin: 0; }
+  body .contenedorPrincipal footer h5 {
+    font-size: 1.2rem; }
+  body .contenedorPrincipal footer ul {
+    font-size: 1.02rem; }
+  body .contenedorPrincipal footer p {
+    font-size: 0.96rem; }
+  body .contenedorPrincipal footer .container {
+    box-sizing: border-box;
+    margin: 0 0px;
+    padding: 0px 15px 10px 15px;
+    text-align: left;
+    max-width: 400px; }
+    body .contenedorPrincipal footer .container .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px; }
+      body .contenedorPrincipal footer .container .row div {
+        position: relative;
+        padding: 0 20px 15px 20px;
+        display: block; }
+        body .contenedorPrincipal footer .container .row div h5 {
+          text-transform: uppercase;
+          margin: 0 0 20px 0;
+          padding-bottom: 15px;
+          border-bottom: 2px solid #5E0381;
+          position: relative; }
+        body .contenedorPrincipal footer .container .row div ul {
+          margin: 0;
+          padding-left: 15px;
+          padding-bottom: 15px; }
+          body .contenedorPrincipal footer .container .row div ul li a {
+            text-shadow: none; }
+            body .contenedorPrincipal footer .container .row div ul li a img {
+              padding: 0.2rem; }
+  body .contenedorPrincipal footer .derechos {
+    color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0.8rem; }

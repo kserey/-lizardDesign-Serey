@@ -24,182 +24,179 @@
 
 body {
     @extend %background-body;
-}
 
-.header{
-    /* ESTILOS DEL MENÚ */
+    .contenedorPrincipal{
 
-    .headerMenu{
-        @extend %headerMenu;
+        /* HEADER: NAVBAR Y CARRUSEL */
+        .header{
+            /* ESTILOS DEL MENÚ */
 
-        .linkMenu{
-            img{
-                width: 7rem;
-            }   
-        }
-            
-        .botonBurger{
-            background-color: nth($paleta, $n:1);
-        }
+            .headerMenu{
+                @extend %headerMenu;
 
-        .menu{
-            @extend %text-menu;
-        }
-
-        /* ESTILOS DEL SUBMENÚ */
-
-        .subMenu{
-            @extend %submenu;
-
-        }
-
-        .linkMenu, .navbar-nav li a{
-            color: nth($paleta-pastel, $n:1);
-        }
-
-        .subMenu :hover{
-            @extend %botones ;
-        }
-    }
-
-    /* ESTILOS CARRUSEL*/
-    .carrusel{
-        display: none;
-
-        .carrusel-inner{
-
-            .carrusel-item{
-
-                img{
-                    opacity: 0.7;
+                .linkMenu{
+                    img{
+                        width: 7rem;
+                    }   
+                }
+                    
+                .botonBurger{
+                    background-color: nth($paleta, $n:1);
                 }
 
-                .carrusel-contenido{
-                    margin: 0;
-                    padding: 0rem;
-                    display:flexbox;
+                .menu{
+                    @extend %text-menu;
+                }
 
-                    h1{
-                        font-size: 1.5rem;        
-                    }
+                /* ESTILOS DEL SUBMENÚ */
 
-                    p{
+                .subMenu{
+                    @extend %submenu;
 
-                    }
-                    
-                    .carrusel_boton{
-                        display: flexbox;
-                        @extend %botones ;
-                        margin: 0rem 1rem;
-                        padding: 0.1rem 0.5rem;
-                        font-size: 0.8rem;
-                        width: max-content;
-        
-                        a{
-                            text-decoration: none;
-                            color: nth($paleta, $n:3);
-                        }
-        
-                        a:link{
-                            color: nth($paleta, $n:3);
-                        }
-        
-                        a:visited{
-                            color: nth($paleta, $n:3);
-                        }
-        
-                        a:hover{              
-                            font-weight: bolder;
-                            font-size: larger;
-                        }
-                    }
+                }
+
+                .linkMenu, .navbar-nav li a{
+                    color: nth($paleta-pastel, $n:1);
+                }
+
+                .subMenu :hover{
+                    @extend %botones ;
                 }
             }
-        }
 
-        .carrusel-img-botones{
-            display: none;
-            margin: 0;
-        }
+            /* ESTILOS CARRUSEL*/
+            .carrusel{
+                display: none;
 
-    }
-}
+                .carrusel-inner{
 
+                    .carrusel-item{
 
-main{
-    .botonWsp{
-        @extend %boton-wsp;
-      
-        .logoWsp{
-            @extend %logo-wsp;
-        }
-    
-    }
-}
+                        img{
+                            opacity: 0.7;
+                        }
 
+                        .carrusel-contenido{
+                            margin: 0;
+                            padding: 0rem;
+                            display:flexbox;
 
+                            h1{
+                                font-size: 1.5rem;        
+                            }
 
+                            p{
 
-/* ESTILOS DEL FOOTER */
-
-footer{
-    @include footer-tamanos(1.2rem);
-    
-    .container{
-        box-sizing: border-box;
-        margin: 0 0px;
-        padding: 0px 15px 10px 15px;
-        text-align: left;
-        max-width: 400px;
-       
-
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 -15px;
-
-            div{
-                position: relative;
-                padding: 0 20px 15px 20px;
-                display: block;
-
-                h5{
-                    text-transform: uppercase;
-                    margin: 0 0 20px 0;
-                    padding-bottom: 15px;
-                    border-bottom: 2px solid nth($paleta, $n:4);
-                    position: relative;
-                    height: 50px;
-                }
-
-                ul{
-                    margin: 0;
-                    padding-left: 15px;
-                    padding-bottom: 15px;
-
-                    li{
-                        a{
-                            @extend %enfasis-main;
-                            text-shadow: none;
-
-                            img{
-                                padding: 0.2rem;
+                            }
+                            
+                            .carrusel_boton{
+                                display: flexbox;
+                                @extend %botones ;
+                                margin: 0rem 1rem;
+                                padding: 0.1rem 0.5rem;
+                                font-size: 0.8rem;
+                                width: max-content;
+                
+                                a{
+                                    text-decoration: none;
+                                    color: nth($paleta, $n:3);
+                                }
+                
+                                a:link{
+                                    color: nth($paleta, $n:3);
+                                }
+                
+                                a:visited{
+                                    color: nth($paleta, $n:3);
+                                }
+                
+                                a:hover{              
+                                    font-weight: bolder;
+                                    font-size: larger;
+                                }
                             }
                         }
                     }
                 }
+
+                .carrusel-img-botones{
+                    display: none;
+                    margin: 0;
+                }
+                
             }
         }
-    }
+        
+        /* ESTILOS DEL MAIN */
+        main{
+            .botonWsp{
+                @extend %boton-wsp;
+                
+                .logoWsp{
+                    @extend %logo-wsp;
+                }
+                
+            }
+        }
 
+        /* ESTILOS DEL FOOTER */
+        footer{
+            @include footer-tamanos(1.2rem);
+                
+            .container{
+                box-sizing: border-box;
+                margin: 0 0px;
+                padding: 0px 15px 10px 15px;
+                text-align: left;
+                max-width: 400px;
+                    
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -15px;
+                        
+                    div{
+                        position: relative;
+                        padding: 0 20px 15px 20px;
+                        display: block;
 
-
-    .derechos{
-        @extend %footer-bgd;
-        color: nth($paleta-pastel, $n:1);
-        text-align: center;
-        margin: 0;
-        padding: 0.8rem;
-
+                        h5{
+                            text-transform: uppercase;
+                            margin: 0 0 20px 0;
+                            padding-bottom: 15px;
+                            border-bottom: 2px solid nth($paleta, $n:4);
+                            position: relative;
+                            
+                        }
+                            
+                        ul{
+                            margin: 0;
+                            padding-left: 15px;
+                            padding-bottom: 15px;
+                            
+                            li{
+                                a{
+                                    @extend %enfasis-main;
+                                    text-shadow: none;
+                                    
+                                    img{
+                                        padding: 0.2rem;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            
+            .derechos{
+                @extend %footer-bgd;
+                color: nth($paleta-pastel, $n:1);
+                text-align: center;
+                margin: 0;
+                padding: 0.8rem;
+            }
+        }
     }
 }
