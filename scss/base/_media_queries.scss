@@ -29,32 +29,30 @@
             }
 
             /* MAIN: CONTENIDO PPAL */
-            main{
+            main{                
                 .principal{
-                    padding: 1.5rem;
-                
-                .principalTitle{
+                    padding: 1rem 2rem;
+               
+                    .principalTitle{
                         @include encabezados-index(1.6rem)
-                }
+                    }
                 }
 
                 .news{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items:flex-start;
 
                     div{
-                        h4{
-
-                        }
 
                         img{
-                            width: auto;
-
+                            max-width: 60vh
                         }
 
-                        p{
-                            
-                        }
                     }
                 }
+                
             }
             
             /* FOOTER: PIE DE PÁGINA */
@@ -71,7 +69,7 @@
 
 
  
-/*Móviles en horizontal o tablets en vertica  DESDE 768PX*/
+/*Móviles en horizontal o tablets en vertical DESDE 768PX*/
 @media (min-width: 768px) {
     body{
         .contenedorPrincipal{
@@ -98,7 +96,7 @@
             /* MAIN: CONTENIDO PPAL */
             main{
                 .principal{
-                    padding: 1.5rem 3rem;
+                    padding: 1rem 3rem;
 
                     .principalTitle{
                         @include encabezados-index(2rem)
@@ -111,7 +109,14 @@
 
                 .news{
 
+
+                    div{
+                        padding: 0;
+                        max-width: 330px;
+                    }
+
                 }
+                
 
             }
             
@@ -155,31 +160,23 @@
         
             /* MAIN: CONTENIDO PPAL */
             main{
-
-                .principal{
-                    padding: 1.5rem 3rem;
-                
-                .principalTitle{
-                        @include encabezados-index(2.2rem)
-                }
+                .principal{               
+                    .principalTitle{
+                            @include encabezados-index(2.2rem)
+                    }
                 }
         
                 .news{
+                    padding: 0;
         
                     div{
-                        h4{
-        
-                        }
-        
-                        img{
-        
-                        }
-        
-                        p{
-                            
-                        }
+                        margin: 0;
+                        padding: 0;
+                        max-width: 25%;
                     }
                 }
+
+                
             }
             
             /* FOOTER: PIE DE PÁGINA */

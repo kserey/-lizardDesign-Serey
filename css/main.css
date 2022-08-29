@@ -45,7 +45,7 @@
             display: flex;
             flex-direction: row; }
     body .contenedorPrincipal main .principal {
-      padding: 1.5rem; }
+      padding: 1rem 2rem; }
       body .contenedorPrincipal main .principal .principalTitle {
         padding-bottom: 1rem;
         text-align: center; }
@@ -69,8 +69,13 @@
           color: #5E0381; }
         body .contenedorPrincipal main .principal .principalTitle a:visited {
           color: #5E0381; }
-    body .contenedorPrincipal main .news div img {
-      width: auto; }
+    body .contenedorPrincipal main .news {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start; }
+      body .contenedorPrincipal main .news div img {
+        max-width: 60vh; }
     body .contenedorPrincipal footer h5 {
       font-size: 1.2rem; }
     body .contenedorPrincipal footer ul {
@@ -80,7 +85,7 @@
     body .contenedorPrincipal footer .container {
       max-width: 768px; } }
 
-/*Móviles en horizontal o tablets en vertica  DESDE 768PX*/
+/*Móviles en horizontal o tablets en vertical DESDE 768PX*/
 @media (min-width: 768px) {
   body .contenedorPrincipal {
     /* HEADER: NAVBAR Y CARRUSEL */
@@ -120,7 +125,7 @@
       body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
         display: block; }
     body .contenedorPrincipal main .principal {
-      padding: 1.5rem 3rem; }
+      padding: 1rem 3rem; }
       body .contenedorPrincipal main .principal .principalTitle {
         padding-bottom: 1rem;
         text-align: center; }
@@ -146,6 +151,9 @@
           color: #5E0381; }
         body .contenedorPrincipal main .principal .principalTitle .somos {
           display: none; }
+    body .contenedorPrincipal main .news div {
+      padding: 0;
+      max-width: 330px; }
     body .contenedorPrincipal footer h5 {
       font-size: 1.3rem; }
     body .contenedorPrincipal footer ul {
@@ -192,31 +200,35 @@
           body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:hover {
             font-weight: bolder;
             font-size: larger; }
-    body .contenedorPrincipal main .principal {
-      padding: 1.5rem 3rem; }
-      body .contenedorPrincipal main .principal .principalTitle {
-        padding-bottom: 1rem;
-        text-align: center; }
-        body .contenedorPrincipal main .principal .principalTitle h2 {
-          font-size: 2.2rem;
-          margin: 0; }
-        body .contenedorPrincipal main .principal .principalTitle h3 {
-          font-size: 1.65rem;
-          margin: 0;
-          padding: 1rem; }
-        body .contenedorPrincipal main .principal .principalTitle p {
-          font-size: 1.32rem;
-          margin: 0; }
-        body .contenedorPrincipal main .principal .principalTitle span {
-          font-size: 1.76rem;
-          margin: 0;
-          display: block;
-          font-weight: bold;
-          padding: 0.5rem 0rem; }
-        body .contenedorPrincipal main .principal .principalTitle a:link {
-          color: #5E0381; }
-        body .contenedorPrincipal main .principal .principalTitle a:visited {
-          color: #5E0381; }
+    body .contenedorPrincipal main .principal .principalTitle {
+      padding-bottom: 1rem;
+      text-align: center; }
+      body .contenedorPrincipal main .principal .principalTitle h2 {
+        font-size: 2.2rem;
+        margin: 0; }
+      body .contenedorPrincipal main .principal .principalTitle h3 {
+        font-size: 1.65rem;
+        margin: 0;
+        padding: 1rem; }
+      body .contenedorPrincipal main .principal .principalTitle p {
+        font-size: 1.32rem;
+        margin: 0; }
+      body .contenedorPrincipal main .principal .principalTitle span {
+        font-size: 1.76rem;
+        margin: 0;
+        display: block;
+        font-weight: bold;
+        padding: 0.5rem 0rem; }
+      body .contenedorPrincipal main .principal .principalTitle a:link {
+        color: #5E0381; }
+      body .contenedorPrincipal main .principal .principalTitle a:visited {
+        color: #5E0381; }
+    body .contenedorPrincipal main .news {
+      padding: 0; }
+      body .contenedorPrincipal main .news div {
+        margin: 0;
+        padding: 0;
+        max-width: 25%; }
     body .contenedorPrincipal footer h5 {
       font-size: 1.3rem; }
     body .contenedorPrincipal footer ul {
@@ -329,14 +341,18 @@ main .principal {
       color: #5E0381; }
 
 main .news {
+  border: solid red;
   margin: 0;
   text-align: center; }
-  main .news div h4 {
-    font-size: 1.5rem; }
-  main .news div img {
-    width: 75%; }
-  main .news div p {
-    padding: 1rem; }
+  main .news div {
+    border: solid turquoise; }
+    main .news div h4 {
+      font-size: 1.5rem; }
+    main .news div img {
+      width: 75%;
+      max-width: 250px; }
+    main .news div p {
+      padding: 1rem; }
 
 /*
 @import "base/styles_ofertas";
