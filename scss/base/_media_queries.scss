@@ -42,7 +42,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-evenly;
-                    align-items:flex-start;
+                    align-items:stretch;
 
                     div{
 
@@ -172,7 +172,15 @@
                     div{
                         margin: 0;
                         padding: 0;
-                        max-width: 25%;
+                        max-width: 20%;
+
+                        h4{
+                            height: 4rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
                     }
                 }
 
