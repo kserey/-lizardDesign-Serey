@@ -1,0 +1,148 @@
+@mixin encabezados-index($tamano){
+  padding-bottom: 1rem;
+  text-align: center;
+
+  h2{
+    font-size: $tamano;
+    @extend %index-h2;
+    margin: 0;
+  }
+
+  h3{
+    font-size: $tamano * 0.75;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  p{
+    font-size: $tamano * 0.6;
+    margin: 0;
+  }
+
+  span{
+    font-size: $tamano * 0.8;
+    margin: 0;
+    display: block;
+    font-weight: bold;
+    padding: 0.5rem 0rem;
+  }
+
+  a{
+    @extend %enfasis-main;
+  }
+
+  a:link{
+    color: nth($paleta, $n:4);
+  }
+
+  a:visited{
+    color: nth($paleta, $n:4);
+  }
+
+}
+
+@mixin news-title($tamano){
+  font-size: $tamano;
+  @extend %enfasis-main;
+}
+
+@mixin footer-tamanos($tamano){ 
+  h5{
+    font-size: $tamano;
+  }
+
+  ul{
+    font-size: $tamano * 0.85;
+  }
+
+  p{
+    font-size: $tamano * 0.8;
+  }
+  
+}
+
+@mixin carrusel-textos($tamano){
+  margin: 0;
+  padding: 0rem;
+
+  h1{
+    padding-top: $tamano * 0.1;
+    font-weight: bold;
+    font-size: $tamano;
+    text-shadow: 1px 1px nth($paleta, $n:1);
+  }
+
+  p{
+    margin: 0rem;
+    font-size: $tamano * 0.6;
+    font-weight: bold;
+    span{
+      color: nth($paleta-pastel, $n: 2);
+      text-shadow: 1px 1px nth($paleta-pastel, $n:1);
+
+
+    }
+  }
+  
+  .carrusel_botones{
+    margin-top: $tamano*0.2;
+
+    .carrusel_boton{
+      @extend %botones;
+      font-size: $tamano * 0.6;
+      a{
+        text-decoration: none;
+        color: nth($paleta, $n:3);
+      }
+      
+      a:link{
+        color: nth($paleta, $n:3);
+      }
+      
+      a:visited{
+        color: nth($paleta, $n:3);
+      }
+      
+      a:hover{              
+        font-weight: bolder;
+        font-size: larger;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@mixin prefixer($property, $value, $prefixes: webkit moz ms o) {
+    #{$property}: #{$value};
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: #{$value};
+    }
+  }
+
+@mixin img-prod ($width, $height){
+    width: $width;
+    height: $height;    
+}
+
+@mixin animaciones ($animacion){
+    -webkit-animation: $animacion ;
+    -o-animation: $animacion;
+    -moz-animation: $animacion;
+    animation: $animacion;  
+}
+
+
+@mixin boton-hover {
+    background-color:nth($paleta, $n:5);
+    color: nth($paleta, $n:3);
+    font-weight: bold;
+    border-radius: 15px;    
+}
+

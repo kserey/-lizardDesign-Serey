@@ -1,0 +1,33 @@
+/* ESTILOS MAIN */
+
+main{
+    .principal{
+        padding: 5rem 2rem 2rem 2rem;
+     
+       .principalTitle{
+            @include encabezados-index(1.5rem);
+       }
+    }
+
+    .news{
+
+        margin: 0;
+        text-align: center;
+
+        div{
+            h4{
+                @include news-title(1.5rem);
+            }
+            img{
+                width: 75%;
+            }
+
+            p{
+                padding: 1rem;
+            }
+        }
+    }
+
+
+
+}

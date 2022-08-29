@@ -1,0 +1,194 @@
+/* RESPONSIVE */
+
+/*Móviles en horizontal o tablets en vertical DESDE 400PX*/
+@media (min-width: 400px) {
+    body{
+        .contenedorPrincipal{
+
+            /* HEADER: NAVBAR Y CARRUSEL */
+            header{
+
+                /* ESTILOS CARRUSEL */
+                .carrusel{
+                    display: block;
+                                   
+                    .carrusel-inner{        
+                        .carrusel-item{        
+                            .carrusel-contenido{
+                                @include carrusel-textos(1.6rem);
+                                left: 10%;
+                                right: 10%;
+                                .carrusel_botones{
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                            }                        
+                        }
+                    }  
+                }
+            }
+
+            /* MAIN: CONTENIDO PPAL */
+            main{
+                .principal{
+                    padding: 1.5rem;
+                
+                .principalTitle{
+                        @include encabezados-index(1.6rem)
+                }
+                }
+
+                .news{
+
+                    div{
+                        h4{
+
+                        }
+
+                        img{
+                            width: auto;
+
+                        }
+
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+            
+            /* FOOTER: PIE DE PÁGINA */
+            footer{
+                @include footer-tamanos(1.2rem);
+                
+                .container{
+                    max-width: 768px;
+                }
+            }
+        }
+    }
+}
+
+
+ 
+/*Móviles en horizontal o tablets en vertica  DESDE 768PX*/
+@media (min-width: 768px) {
+    body{
+        .contenedorPrincipal{
+        
+            /* HEADER: NAVBAR Y CARRUSEL */
+            header{
+                .carrusel{
+                    .carrusel-inner{        
+                        .carrusel-item{        
+                            .carrusel-contenido{    
+                                @include carrusel-textos(2rem);
+                                left: 26%;
+                                right: 26%;
+
+                                p{
+                                    display: block;
+                                }
+                            }                        
+                        }
+                    }        
+                }
+            }
+
+            /* MAIN: CONTENIDO PPAL */
+            main{
+                .principal{
+                    padding: 1.5rem 3rem;
+
+                    .principalTitle{
+                        @include encabezados-index(2rem)
+
+                        .somos{
+                            display: none;
+                        }
+                    }
+                }
+
+                .news{
+
+                }
+
+            }
+            
+            /* FOOTER: PIE DE PÁGINA */
+            footer{
+                @include footer-tamanos(1.3rem);
+                .container{
+                    max-width: 1024px;
+                    .row{
+                        div{
+                            h5{
+                                height: 50px;                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+}
+
+ 
+/*Tablets en horizonal y escritorios normales  DESDE 1024PX*/
+@media (min-width: 1024px) { 
+    body{
+        .contenedorPrincipal{
+            
+            /* HEADER: NAVBAR Y CARRUSEL */
+            header{
+                .carrusel{
+                    .carrusel-inner{        
+                        .carrusel-item{        
+                            .carrusel-contenido{
+                                @include carrusel-textos(2.2rem);
+                            }                       
+                        }
+                    }
+                }
+            }
+        
+            /* MAIN: CONTENIDO PPAL */
+            main{
+
+                .principal{
+                    padding: 1.5rem 3rem;
+                
+                .principalTitle{
+                        @include encabezados-index(2.2rem)
+                }
+                }
+        
+                .news{
+        
+                    div{
+                        h4{
+        
+                        }
+        
+                        img{
+        
+                        }
+        
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+            
+            /* FOOTER: PIE DE PÁGINA */
+            footer{
+                @include footer-tamanos(1.3rem);
+                .container{
+                    max-width: 100%;
+                }
+            }
+        }
+    }      
+}

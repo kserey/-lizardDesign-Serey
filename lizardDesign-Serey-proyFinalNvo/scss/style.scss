@@ -1,0 +1,183 @@
+
+@import "base/variables";
+@import "base/mixin";
+@import "base/listas";
+@import "base/media_queries";
+@import "base/extend";
+
+@import "base/styles_index";
+/*
+@import "base/styles_ofertas";
+@import "base/styles_papeleria";
+@import "base/styles_productos";
+@import "base/styles_conocenos";
+@import "base/styles_contacto";
+@import "base/styles_estapados";
+*/
+
+/* RESET */
+*{
+    @extend %reset;
+}
+
+/* ESTILOS GENERALES BODY */
+
+body{
+
+    @extend %background-body;      
+
+    /* HEADER: NAVBAR Y CARRUSEL */
+    header{
+        /* ESTILOS DEL MENÚ */
+        
+        .headerMenu{
+            @extend %headerMenu;
+            
+            .linkMenu{
+                img{
+                    width: 7rem;
+                }   
+            }
+            
+            .botonBurger{
+                background-color: nth($paleta, $n:1);
+            }
+            
+            .menu{
+                @extend %text-menu;
+            }
+            
+            /* ESTILOS DEL SUBMENÚ */
+            
+            .subMenu{
+                @extend %submenu;
+                
+            }
+            
+            .linkMenu, .navbar-nav li a{
+                color: nth($paleta-pastel, $n:1);
+            }
+            
+            .subMenu :hover{
+                @extend %botones ;
+            }
+        }
+        
+        /* ESTILOS CARRUSEL*/
+        .carrusel{
+            display: none;
+            padding-top: 4.3rem; 
+            
+            .carrusel-inner{
+                
+                .carrusel-item{                                      
+                    img{
+                        opacity: 0.7;
+                    }
+                    
+                    .carrusel-contenido{
+                        height: 85%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:space-evenly;
+                        align-items: center;
+
+
+                        @include carrusel-textos(1.5rem);       
+
+                        h1{
+                        }
+
+                        p{
+                            display: none;
+                        }
+                        
+                        .carrusel_botones{
+                        }
+                    }
+                }
+            }
+            
+            .carrusel-img-botones{
+                /*display: flex;*/
+                margin: 0;
+            }
+            
+        }
+    }
+    
+    /* ESTILOS DEL MAIN */
+    main{
+        .botonWsp{
+            @extend %boton-wsp;
+            
+            .logoWsp{
+                @extend %logo-wsp;
+            }
+            
+        }
+    }
+    
+    /* ESTILOS DEL FOOTER */
+    footer{
+        @include footer-tamanos(1.2rem);
+        
+        .container{
+            box-sizing: border-box;
+            margin: 0 0px;
+            padding: 0px 15px 10px 15px;
+            text-align: left;
+            max-width: 400px;
+            
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                
+                div{
+                    position: relative;
+                    padding: 0 20px 15px 20px;
+                    display: block;
+                    
+                    h5{
+                        text-transform: uppercase;
+                        margin: 0 0 20px 0;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid nth($paleta, $n:4);
+                        position: relative;
+                        
+                    }
+                    
+                    ul{
+                        margin: 0;
+                        padding-left: 15px;
+                        padding-bottom: 15px;
+                        
+                        li{
+                            a{
+                                @extend %enfasis-main;
+                                text-shadow: none;
+                                
+                                img{
+                                    padding: 0.2rem;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+        .derechos{
+            @extend %footer-bgd;
+            color: nth($paleta-pastel, $n:1);
+            text-align: center;
+            margin: 0;
+            padding: 0.8rem;
+        }
+    }
+    
+  
+}
+    

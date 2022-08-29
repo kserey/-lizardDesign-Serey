@@ -1,0 +1,95 @@
+%reset{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+%background-extremos{
+    background-image: linear-gradient(to right,(nth($paleta-pastel, $n:2)),(nth($paleta, $n:4)));
+}
+
+%background-body{
+    background-image: linear-gradient(to right,(nth($paleta-pastel, $n:1)), (nth($paleta, $n:3)))
+}
+
+%headerMenu{
+    @extend %background-extremos;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100; 
+}
+
+%text-menu{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+%submenu{
+    border: solid nth($paleta-pastel, $n:1);
+    padding: 5px;
+    background-color: nth($paleta, $n:3);
+    border-radius: 15px;
+}
+
+%botones{
+    background-color:nth($paleta, $n:5);
+    color: nth($paleta, $n:3);
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px nth($paleta-pastel, $n:3);
+    border-radius: 15px; 
+    margin: 0 5px;
+    padding: 2px 5px;
+    width: max-content;
+}
+
+%boton-wsp{
+    background-color: $color-wsp;
+    position:fixed;
+    bottom:10%;
+    right:1rem;
+    z-index: 100;
+    border-radius: 50%;
+    animation: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+%logo-wsp{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+
+%index-h2{
+    text-align:center;
+    text-shadow: 1px 1px nth($paleta-pastel, $n:1);
+    font-weight: bold;
+}
+
+%enfasis-main{
+    text-decoration: none;
+    color: nth($paleta, $n:4);
+    text-shadow: 1px 1px nth($paleta-pastel, $n:3);
+    font-weight: bold;  
+}
+
+
+
+%footer-bgd{
+    @extend %background-extremos;
+
+    a{
+        text-decoration: none;
+        color: nth($paleta-pastel, $n:1);
+        text-shadow: 1px 1px nth($paleta-pastel, $n:3);
+        font-weight: bold;  
+    }
+}
+
