@@ -7,28 +7,24 @@
 
             /* HEADER: NAVBAR Y CARRUSEL */
             header{
+
+                /* ESTILOS CARRUSEL */
                 .carrusel{
                     display: block;
-                    padding-top: 4.3rem;                
+                                   
                     .carrusel-inner{        
                         .carrusel-item{        
                             .carrusel-contenido{
-                                h1{
-                                    font-size: 1.5rem; 
-                                }
-                                p{
-                                    display: none;
-                                }
-                                .carrusel_boton{
-                                    display: none;
-
+                                @include carrusel-textos(1.6rem);
+                                left: 10%;
+                                right: 10%;
+                                .carrusel_botones{
+                                    display: flex;
+                                    flex-direction: row;
                                 }
                             }                        
                         }
-                    }
-                    .carrusel-img-botones{
-                        display: flex;
-                    }        
+                    }  
                 }
             }
 
@@ -38,7 +34,7 @@
                     padding: 1.5rem;
                 
                 .principalTitle{
-                        @include encabezados-index(1.8rem)
+                        @include encabezados-index(1.6rem)
                 }
                 }
 
@@ -85,19 +81,13 @@
                 .carrusel{
                     .carrusel-inner{        
                         .carrusel-item{        
-                            .carrusel-contenido{
-                                h1{
-                                    font-size: 1.8rem;        
-                                }               
+                            .carrusel-contenido{    
+                                @include carrusel-textos(2rem);
+                                left: 26%;
+                                right: 26%;
+
                                 p{
                                     display: block;
-                                    font-size: 1.2rem;
-                                }
-                                .carrusel_boton{
-                                    display: inline;
-                                    margin: 0rem 1rem;
-                                    padding: 0.1rem 0.5rem;
-                                    font-size: 1rem;    
                                 }
                             }                        
                         }
@@ -109,10 +99,18 @@
             main{
                 .principal{
                     padding: 1.5rem 3rem;
-                
-                .principalTitle{
+
+                    .principalTitle{
                         @include encabezados-index(2rem)
+
+                        .somos{
+                            display: none;
+                        }
+                    }
                 }
+
+                .news{
+
                 }
 
             }
@@ -148,19 +146,7 @@
                     .carrusel-inner{        
                         .carrusel-item{        
                             .carrusel-contenido{
-                                h1{
-                                    font-size: 2rem;        
-                                }               
-                                p{
-                                    display: block;
-                                    font-size: 1.5rem;
-                                }
-                                .carrusel_boton{
-                                    display: inline;
-                                    margin: 0rem 1rem;
-                                    padding: 0.1rem 0.5rem;
-                                    font-size: 1rem;    
-                                }
+                                @include carrusel-textos(2.2rem);
                             }                       
                         }
                     }

@@ -6,34 +6,61 @@
     /* HEADER: NAVBAR Y CARRUSEL */
     /* MAIN: CONTENIDO PPAL */
     /* FOOTER: PIE DE PÁGINA */ }
-    body .contenedorPrincipal header .carrusel {
-      display: block;
-      padding-top: 4.3rem; }
-      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
-        font-size: 1.5rem; }
-      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
-        display: none; }
-      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
-        display: none; }
-      body .contenedorPrincipal header .carrusel .carrusel-img-botones {
-        display: flex; }
+    body .contenedorPrincipal header {
+      /* ESTILOS CARRUSEL */ }
+      body .contenedorPrincipal header .carrusel {
+        display: block; }
+        body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido {
+          margin: 0;
+          padding: 0rem;
+          left: 10%;
+          right: 10%; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+            padding-top: 0.16rem;
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-shadow: 1px 1px white; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+            margin: 0rem;
+            font-size: 0.96rem;
+            font-weight: bold; }
+            body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p span {
+              color: #f7b96e;
+              text-shadow: 1px 1px #f5f5f5; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones {
+            margin-top: 0.32rem; }
+            body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton {
+              font-size: 0.96rem; }
+              body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a {
+                text-decoration: none;
+                color: #5371FF; }
+              body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:link {
+                color: #5371FF; }
+              body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:visited {
+                color: #5371FF; }
+              body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:hover {
+                font-weight: bolder;
+                font-size: larger; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones {
+            display: flex;
+            flex-direction: row; }
     body .contenedorPrincipal main .principal {
       padding: 1.5rem; }
       body .contenedorPrincipal main .principal .principalTitle {
         padding-bottom: 1rem;
         text-align: center; }
         body .contenedorPrincipal main .principal .principalTitle h2 {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           margin: 0; }
         body .contenedorPrincipal main .principal .principalTitle h3 {
-          font-size: 1.35rem;
+          font-size: 1.2rem;
           margin: 0;
           padding: 1rem; }
         body .contenedorPrincipal main .principal .principalTitle p {
-          font-size: 1.08rem;
+          font-size: 0.96rem;
           margin: 0; }
         body .contenedorPrincipal main .principal .principalTitle span {
-          font-size: 1.44rem;
+          font-size: 1.28rem;
           margin: 0;
           display: block;
           font-weight: bold;
@@ -59,16 +86,39 @@
     /* HEADER: NAVBAR Y CARRUSEL */
     /* MAIN: CONTENIDO PPAL */
     /* FOOTER: PIE DE PÁGINA */ }
-    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
-      font-size: 1.8rem; }
-    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
-      display: block;
-      font-size: 1.2rem; }
-    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
-      display: inline;
-      margin: 0rem 1rem;
-      padding: 0.1rem 0.5rem;
-      font-size: 1rem; }
+    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido {
+      margin: 0;
+      padding: 0rem;
+      left: 26%;
+      right: 26%; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+        padding-top: 0.2rem;
+        font-weight: bold;
+        font-size: 2rem;
+        text-shadow: 1px 1px white; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+        margin: 0rem;
+        font-size: 1.2rem;
+        font-weight: bold; }
+        body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p span {
+          color: #f7b96e;
+          text-shadow: 1px 1px #f5f5f5; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones {
+        margin-top: 0.4rem; }
+        body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton {
+          font-size: 1.2rem; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a {
+            text-decoration: none;
+            color: #5371FF; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:link {
+            color: #5371FF; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:visited {
+            color: #5371FF; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:hover {
+            font-weight: bolder;
+            font-size: larger; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+        display: block; }
     body .contenedorPrincipal main .principal {
       padding: 1.5rem 3rem; }
       body .contenedorPrincipal main .principal .principalTitle {
@@ -94,6 +144,8 @@
           color: #5E0381; }
         body .contenedorPrincipal main .principal .principalTitle a:visited {
           color: #5E0381; }
+        body .contenedorPrincipal main .principal .principalTitle .somos {
+          display: none; }
     body .contenedorPrincipal footer h5 {
       font-size: 1.3rem; }
     body .contenedorPrincipal footer ul {
@@ -111,16 +163,35 @@
     /* HEADER: NAVBAR Y CARRUSEL */
     /* MAIN: CONTENIDO PPAL */
     /* FOOTER: PIE DE PÁGINA */ }
-    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
-      font-size: 2rem; }
-    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
-      display: block;
-      font-size: 1.5rem; }
-    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
-      display: inline;
-      margin: 0rem 1rem;
-      padding: 0.1rem 0.5rem;
-      font-size: 1rem; }
+    body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido {
+      margin: 0;
+      padding: 0rem; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
+        padding-top: 0.22rem;
+        font-weight: bold;
+        font-size: 2.2rem;
+        text-shadow: 1px 1px white; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+        margin: 0rem;
+        font-size: 1.32rem;
+        font-weight: bold; }
+        body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p span {
+          color: #f7b96e;
+          text-shadow: 1px 1px #f5f5f5; }
+      body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones {
+        margin-top: 0.44rem; }
+        body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton {
+          font-size: 1.32rem; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a {
+            text-decoration: none;
+            color: #5371FF; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:link {
+            color: #5371FF; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:visited {
+            color: #5371FF; }
+          body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:hover {
+            font-weight: bolder;
+            font-size: larger; }
     body .contenedorPrincipal main .principal {
       padding: 1.5rem 3rem; }
       body .contenedorPrincipal main .principal .principalTitle {
@@ -188,11 +259,15 @@ body header .headerMenu .subMenu {
   background-color: #5371FF;
   border-radius: 15px; }
 
-body header .headerMenu .subMenu :hover, body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
+body .contenedorPrincipal header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton, body header .headerMenu .subMenu :hover, body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton {
   background-color: #8AE1FA;
   color: #5371FF;
   font-weight: bold;
-  border-radius: 15px; }
+  text-shadow: 0.5px 0.5px #8396f8;
+  border-radius: 15px;
+  margin: 0 5px;
+  padding: 2px 5px;
+  width: max-content; }
 
 body main .botonWsp {
   background-color: #0dc143;
@@ -210,7 +285,7 @@ body main .botonWsp .logoWsp {
   border-radius: 50%; }
 
 body .contenedorPrincipal main .principal .principalTitle h2, main .principal .principalTitle h2 {
-  text-align: left;
+  text-align: center;
   text-shadow: 1px 1px #f5f5f5;
   font-weight: bold; }
 
@@ -289,33 +364,48 @@ body {
       body header .headerMenu .linkMenu, body header .headerMenu .navbar-nav li a {
         color: #f5f5f5; }
     body header .carrusel {
-      display: none; }
+      display: none;
+      padding-top: 4.3rem; }
       body header .carrusel .carrusel-inner .carrusel-item img {
         opacity: 0.7; }
       body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido {
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         margin: 0;
-        padding: 0rem;
-        display: flexbox; }
+        padding: 0rem; }
         body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido h1 {
-          font-size: 1.5rem; }
-        body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton {
-          display: flexbox;
-          margin: 0rem 1rem;
-          padding: 0.1rem 0.5rem;
-          font-size: 0.8rem;
-          width: max-content; }
-          body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a {
-            text-decoration: none;
-            color: #5371FF; }
-          body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:link {
-            color: #5371FF; }
-          body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:visited {
-            color: #5371FF; }
-          body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_boton a:hover {
-            font-weight: bolder;
-            font-size: larger; }
+          padding-top: 0.15rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-shadow: 1px 1px white; }
+        body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+          margin: 0rem;
+          font-size: 0.9rem;
+          font-weight: bold; }
+          body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p span {
+            color: #f7b96e;
+            text-shadow: 1px 1px #f5f5f5; }
+        body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones {
+          margin-top: 0.3rem; }
+          body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton {
+            font-size: 0.9rem; }
+            body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a {
+              text-decoration: none;
+              color: #5371FF; }
+            body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:link {
+              color: #5371FF; }
+            body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:visited {
+              color: #5371FF; }
+            body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido .carrusel_botones .carrusel_boton a:hover {
+              font-weight: bolder;
+              font-size: larger; }
+        body header .carrusel .carrusel-inner .carrusel-item .carrusel-contenido p {
+          display: none; }
       body header .carrusel .carrusel-img-botones {
-        display: none;
+        /*display: flex;*/
         margin: 0; }
   body footer h5 {
     font-size: 1.2rem; }

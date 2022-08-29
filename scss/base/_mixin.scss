@@ -61,6 +61,58 @@
   
 }
 
+@mixin carrusel-textos($tamano){
+  margin: 0;
+  padding: 0rem;
+
+  h1{
+    padding-top: $tamano * 0.1;
+    font-weight: bold;
+    font-size: $tamano;
+    text-shadow: 1px 1px nth($paleta, $n:1);
+  }
+
+  p{
+    margin: 0rem;
+    font-size: $tamano * 0.6;
+    font-weight: bold;
+    span{
+      color: nth($paleta-pastel, $n: 2);
+      text-shadow: 1px 1px nth($paleta-pastel, $n:1);
+
+
+    }
+  }
+  
+  .carrusel_botones{
+    margin-top: $tamano*0.2;
+
+    .carrusel_boton{
+      @extend %botones;
+      font-size: $tamano * 0.6;
+      a{
+        text-decoration: none;
+        color: nth($paleta, $n:3);
+      }
+      
+      a:link{
+        color: nth($paleta, $n:3);
+      }
+      
+      a:visited{
+        color: nth($paleta, $n:3);
+      }
+      
+      a:hover{              
+        font-weight: bolder;
+        font-size: larger;
+      }
+    }
+  }
+}
+
+
+
 
 
 

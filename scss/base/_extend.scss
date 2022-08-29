@@ -42,7 +42,11 @@
     background-color:nth($paleta, $n:5);
     color: nth($paleta, $n:3);
     font-weight: bold;
-    border-radius: 15px;  
+    text-shadow: 0.5px 0.5px nth($paleta-pastel, $n:3);
+    border-radius: 15px; 
+    margin: 0 5px;
+    padding: 2px 5px;
+    width: max-content;
 }
 
 %boton-wsp{
@@ -64,7 +68,7 @@
 
 
 %index-h2{
-    text-align:left;
+    text-align:center;
     text-shadow: 1px 1px nth($paleta-pastel, $n:1);
     font-weight: bold;
 }
