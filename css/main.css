@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* POR REVISAR SI HACEN ALGO */
 /* RESPONSIVE */
 /*Móviles en horizontal o tablets en vertical DESDE 400PX*/
 @media (min-width: 400px) {
@@ -358,8 +359,25 @@ main .prodOfertas {
   main .prodOfertas .prodOfertas-stock .stock h4 {
     font-size: 1.5rem; }
   main .prodOfertas .prodOfertas-stock .stock img {
-    width: 75%;
+    box-sizing: border-box;
+    width: 100%;
     max-width: 250px; }
+  main .prodOfertas .prodOfertas-stock .stock .stock-descripcion {
+    font-size: 1.2rem;
+    padding: 1rem 0; }
+    main .prodOfertas .prodOfertas-stock .stock .stock-descripcion div {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      main .prodOfertas .prodOfertas-stock .stock .stock-descripcion div p {
+        font-size: 0.96rem;
+        padding: 0.5rem; }
+        main .prodOfertas .prodOfertas-stock .stock .stock-descripcion div p span {
+          display: block;
+          font-weight: bold; }
+  main .prodOfertas .prodOfertas-packs {
+    border: solid green; }
 
 /*
     .prodOfertas{

@@ -6,34 +6,30 @@ main{
         text-align: center;
 
         .prodOfertas-stock{
-
             .stock{
-
                 h4{
                     @include main-div-title(1.5rem);
                 }
 
                 img{
-                    width: 75%;
+                    box-sizing: border-box;
+                    width: 100%;
                     max-width: 250px;
                 }
                 .stock-descripcion{
-                    ul{
-                        li{
+                    @include stock-description(1.2rem);
+                    div{
+                        p{
                             span{
-
                             }
-
                         }
-
                     }
-
                 }
-            }
-    
+            }    
         }
 
         .prodOfertas-packs{
+            border: solid green;
             h4{
 
             }

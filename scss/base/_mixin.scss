@@ -112,6 +112,27 @@
   }
 }
 
+@mixin stock-description($tamano) {
+  font-size: $tamano;
+  padding: 1rem 0;
+  div{
+    margin-top: 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+
+    p{
+      font-size: $tamano * 0.8;
+      padding: 0.5rem;
+      span{
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  
+}
 
 
 
@@ -119,6 +140,8 @@
 
 
 
+
+/* POR REVISAR SI HACEN ALGO */
 
 @mixin prefixer($property, $value, $prefixes: webkit moz ms o) {
     #{$property}: #{$value};
