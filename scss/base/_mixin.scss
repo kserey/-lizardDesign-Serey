@@ -1,3 +1,8 @@
+@mixin links-main {
+  a{
+    @extend %enfasis-main;
+  }
+}
 
 @mixin encabezados($tamano){
   padding-bottom: 1rem;
@@ -18,27 +23,16 @@
   p{
     font-size: $tamano * 0.6;
     margin: 0;
+    span{
+      font-size: $tamano * 0.8;
+      margin: 0;
+      display: block;
+      font-weight: bold;
+      padding: 0.5rem 0rem;
+    }
   }
 
-  span{
-    font-size: $tamano * 0.8;
-    margin: 0;
-    display: block;
-    font-weight: bold;
-    padding: 0.5rem 0rem;
-  }
-
-  a{
-    @extend %enfasis-main;
-  }
-
-  a:link{
-    color: nth($paleta, $n:4);
-  }
-
-  a:visited{
-    color: nth($paleta, $n:4);
-  }
+  @include links-main;
 
 }
 
@@ -112,9 +106,18 @@
   }
 }
 
+
 @mixin stock-description($tamano) {
   font-size: $tamano;
   padding: 1rem 0;
+  a{
+    @extend %enfasis-main;
+  }
+
+  .ofertas-enfasis{
+    @extend %enfasis-main;
+  }
+
   div{
     margin-top: 1rem;
     display: flex;
@@ -124,17 +127,40 @@
     p{
       font-size: $tamano * 0.8;
       padding: 0.5rem;
+
       span{
         display: block;
         font-weight: bold;
       }
     }
-  }
-
-  
+  }  
 }
 
+@mixin pack-description($tamano) {
+  font-size: $tamano;
+  padding: 1rem 0;
 
+  .ofertas-enfasis{
+    @extend %enfasis-main;
+  }
+  
+  div{
+    margin-top: 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+
+    p{
+      font-size: $tamano * 0.8;
+      padding: 0.5rem;
+
+      span{
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }  
+}
 
 
 

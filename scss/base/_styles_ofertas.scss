@@ -18,34 +18,17 @@ main{
                 }
                 .stock-descripcion{
                     @include stock-description(1.2rem);
-                    div{
-                        p{
-                            span{
-                            }
-                        }
-                    }
                 }
             }    
         }
 
         .prodOfertas-packs{
-            border: solid green;
             h4{
-
-            }
-            .packs-imgs{
-
+                @include main-div-title(1.5rem)
             }
 
             .pack-descripcion{
-                p{
-
-                }
-                ul{
-                    li{
-
-                    }
-                }
+                @include pack-description(1.2rem);
             }
         }
     }

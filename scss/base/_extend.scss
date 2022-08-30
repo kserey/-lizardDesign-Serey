@@ -78,6 +78,14 @@
     color: nth($paleta, $n:4);
     text-shadow: 1px 1px nth($paleta-pastel, $n:3);
     font-weight: bold;  
+    
+    a:link{
+        color: nth($paleta, $n:4);
+      }
+    
+      a:visited{
+        color: nth($paleta, $n:4);
+      }  
 }
 
 

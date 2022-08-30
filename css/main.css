@@ -60,16 +60,12 @@
         body .contenedorPrincipal main .principal .principalTitle p {
           font-size: 0.96rem;
           margin: 0; }
-        body .contenedorPrincipal main .principal .principalTitle span {
-          font-size: 1.28rem;
-          margin: 0;
-          display: block;
-          font-weight: bold;
-          padding: 0.5rem 0rem; }
-        body .contenedorPrincipal main .principal .principalTitle a:link {
-          color: #5E0381; }
-        body .contenedorPrincipal main .principal .principalTitle a:visited {
-          color: #5E0381; }
+          body .contenedorPrincipal main .principal .principalTitle p span {
+            font-size: 1.28rem;
+            margin: 0;
+            display: block;
+            font-weight: bold;
+            padding: 0.5rem 0rem; }
     body .contenedorPrincipal main .news {
       display: flex;
       flex-wrap: wrap;
@@ -147,16 +143,12 @@
         body .contenedorPrincipal main .principal .principalTitle p {
           font-size: 1.2rem;
           margin: 0; }
-        body .contenedorPrincipal main .principal .principalTitle span {
-          font-size: 1.6rem;
-          margin: 0;
-          display: block;
-          font-weight: bold;
-          padding: 0.5rem 0rem; }
-        body .contenedorPrincipal main .principal .principalTitle a:link {
-          color: #5E0381; }
-        body .contenedorPrincipal main .principal .principalTitle a:visited {
-          color: #5E0381; }
+          body .contenedorPrincipal main .principal .principalTitle p span {
+            font-size: 1.6rem;
+            margin: 0;
+            display: block;
+            font-weight: bold;
+            padding: 0.5rem 0rem; }
         body .contenedorPrincipal main .principal .principalTitle .somos {
           display: none; }
     body .contenedorPrincipal main .news div {
@@ -224,16 +216,12 @@
       body .contenedorPrincipal main .principal .principalTitle p {
         font-size: 1.32rem;
         margin: 0; }
-      body .contenedorPrincipal main .principal .principalTitle span {
-        font-size: 1.76rem;
-        margin: 0;
-        display: block;
-        font-weight: bold;
-        padding: 0.5rem 0rem; }
-      body .contenedorPrincipal main .principal .principalTitle a:link {
-        color: #5E0381; }
-      body .contenedorPrincipal main .principal .principalTitle a:visited {
-        color: #5E0381; }
+        body .contenedorPrincipal main .principal .principalTitle p span {
+          font-size: 1.76rem;
+          margin: 0;
+          display: block;
+          font-weight: bold;
+          padding: 0.5rem 0rem; }
     body .contenedorPrincipal main .news {
       padding: 0; }
       body .contenedorPrincipal main .news div {
@@ -328,11 +316,15 @@ body .contenedorPrincipal main .principal .principalTitle h2, body main .princip
   text-shadow: 1px 1px #f5f5f5;
   font-weight: bold; }
 
-body .contenedorPrincipal main .principal .principalTitle a, main .news div h4, main .prodOfertas .prodOfertas-stock .stock h4, body main .principal .principalTitle a, body footer .container .row div ul li a {
+body .contenedorPrincipal main .principal .principalTitle a, main .news div h4, main .prodOfertas .prodOfertas-stock .stock h4, main .prodOfertas .prodOfertas-stock .stock .stock-descripcion a, main .prodOfertas .prodOfertas-stock .stock .stock-descripcion .ofertas-enfasis, main .prodOfertas .prodOfertas-packs h4, main .prodOfertas .prodOfertas-packs .pack-descripcion .ofertas-enfasis, body main .principal .principalTitle a, body footer .container .row div ul li a {
   text-decoration: none;
   color: #5E0381;
   text-shadow: 1px 1px #8396f8;
   font-weight: bold; }
+  main .news div h4 a:link, main .prodOfertas .prodOfertas-stock .stock h4 a:link, main .prodOfertas .prodOfertas-stock .stock .stock-descripcion a a:link, main .prodOfertas .prodOfertas-stock .stock .stock-descripcion .ofertas-enfasis a:link, main .prodOfertas .prodOfertas-packs h4 a:link, main .prodOfertas .prodOfertas-packs .pack-descripcion .ofertas-enfasis a:link, body main .principal .principalTitle a a:link, body footer .container .row div ul li a a:link {
+    color: #5E0381; }
+  main .news div h4 a:visited, main .prodOfertas .prodOfertas-stock .stock h4 a:visited, main .prodOfertas .prodOfertas-stock .stock .stock-descripcion a a:visited, main .prodOfertas .prodOfertas-stock .stock .stock-descripcion .ofertas-enfasis a:visited, main .prodOfertas .prodOfertas-packs h4 a:visited, main .prodOfertas .prodOfertas-packs .pack-descripcion .ofertas-enfasis a:visited, body main .principal .principalTitle a a:visited, body footer .container .row div ul li a a:visited {
+    color: #5E0381; }
 
 body footer .derechos a {
   text-decoration: none;
@@ -376,8 +368,22 @@ main .prodOfertas {
         main .prodOfertas .prodOfertas-stock .stock .stock-descripcion div p span {
           display: block;
           font-weight: bold; }
-  main .prodOfertas .prodOfertas-packs {
-    border: solid green; }
+  main .prodOfertas .prodOfertas-packs h4 {
+    font-size: 1.5rem; }
+  main .prodOfertas .prodOfertas-packs .pack-descripcion {
+    font-size: 1.2rem;
+    padding: 1rem 0; }
+    main .prodOfertas .prodOfertas-packs .pack-descripcion div {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      main .prodOfertas .prodOfertas-packs .pack-descripcion div p {
+        font-size: 0.96rem;
+        padding: 0.5rem; }
+        main .prodOfertas .prodOfertas-packs .pack-descripcion div p span {
+          display: block;
+          font-weight: bold; }
 
 /*
     .prodOfertas{
@@ -617,16 +623,12 @@ body {
       body main .principal .principalTitle p {
         font-size: 0.9rem;
         margin: 0; }
-      body main .principal .principalTitle span {
-        font-size: 1.2rem;
-        margin: 0;
-        display: block;
-        font-weight: bold;
-        padding: 0.5rem 0rem; }
-      body main .principal .principalTitle a:link {
-        color: #5E0381; }
-      body main .principal .principalTitle a:visited {
-        color: #5E0381; }
+        body main .principal .principalTitle p span {
+          font-size: 1.2rem;
+          margin: 0;
+          display: block;
+          font-weight: bold;
+          padding: 0.5rem 0rem; }
   body footer h5 {
     font-size: 1.2rem; }
   body footer ul {
