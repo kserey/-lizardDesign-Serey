@@ -6,8 +6,8 @@
 @import "base/extend";
 
 @import "base/styles_index";
-/*
 @import "base/styles_ofertas";
+/*
 @import "base/styles_papeleria";
 @import "base/styles_productos";
 @import "base/styles_conocenos";
@@ -107,16 +107,24 @@ body{
         }
     }
     
-    /* ESTILOS DEL MAIN */
+    /* ESTILOS GENERALES DEL MAIN */
     main{
         .botonWsp{
             @extend %boton-wsp;
             
             .logoWsp{
                 @extend %logo-wsp;
-            }
-            
+            }            
         }
+
+        .principal{
+            padding: 5rem 2rem 2rem 2rem;
+         
+           .principalTitle{
+            @include encabezados(1.5rem);
+           }       
+        }  
+        
     }
     
     /* ESTILOS DEL FOOTER */

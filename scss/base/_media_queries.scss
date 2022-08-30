@@ -34,7 +34,7 @@
                     padding: 1rem 2rem;
                
                     .principalTitle{
-                        @include encabezados-index(1.6rem)
+                        @include encabezados(1.6rem)
                     }
                 }
 
@@ -45,14 +45,24 @@
                     align-items:stretch;
 
                     div{
-
                         img{
                             max-width: 60vh
                         }
-
                     }
-                }
+                }       
                 
+                .prodOfertas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    align-items:stretch;
+
+                    div{
+                        img{
+                            max-width: 60vh
+                        }
+                    }
+                }  
             }
             
             /* FOOTER: PIE DE PÁGINA */
@@ -99,7 +109,7 @@
                     padding: 1rem 3rem;
 
                     .principalTitle{
-                        @include encabezados-index(2rem)
+                        @include encabezados(2rem)
 
                         .somos{
                             display: none;
@@ -108,16 +118,18 @@
                 }
 
                 .news{
-
-
                     div{
                         padding: 0;
                         max-width: 330px;
                     }
-
                 }
-                
 
+                .prodOfertas{
+                    div{
+                        padding: 0;
+                        max-width: 330px;
+                    }
+                }
             }
             
             /* FOOTER: PIE DE PÁGINA */
@@ -162,7 +174,7 @@
             main{
                 .principal{               
                     .principalTitle{
-                            @include encabezados-index(2.2rem)
+                            @include encabezados(2.2rem)
                     }
                 }
         
@@ -184,7 +196,22 @@
                     }
                 }
 
-                
+                .prodOfertas{
+                    padding: 0;
+        
+                    div{
+                        margin: 0;
+                        padding: 0;
+                        max-width: 20%;
+
+                        h4{
+                            height: 4rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }                
             }
             
             /* FOOTER: PIE DE PÁGINA */
