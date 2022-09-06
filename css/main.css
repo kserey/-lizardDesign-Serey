@@ -647,7 +647,7 @@ main .principal {
     place-content: center;
     grid-template-rows: auto;
     grid-template-columns: 6fr 6fr;
-    grid-template-areas: "card1 card2" "card3 card4"; }
+    grid-template-areas: "card1 card2" "card3 card4"; }
     main .principal .news div {
       text-align: center;
       padding: 0rem 1rem 0.5rem 1rem; }
