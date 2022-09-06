@@ -583,14 +583,12 @@ main .principal {
   /* estilos exclusivos PRODUCTOS */ }
   main .principal .productos {
     padding: 1rem;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    grid-template-areas: "estampados papeleria"; }
+    display: flex;
+    justify-content: space-evenly; }
     main .principal .productos .prod1 {
-      grid-area: estampados; }
+      padding: 1rem; }
     main .principal .productos .prod2 {
-      grid-area: papeleria; }
+      padding: 1rem; }
 
 /* ESTILOS DEL MAIN */
 main .principal {
