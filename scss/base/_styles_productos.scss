@@ -9,17 +9,14 @@ main{
    
         .productos{
             padding: 1rem;
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: auto;
-            
-            grid-template-areas: "estampados papeleria";
+            display: flex;
+            justify-content: space-evenly;
 
             .prod1{
-                grid-area: estampados;
+                padding: 1rem;
             }
             .prod2{
-                grid-area: papeleria;
+                padding: 1rem;
             }       
         }
     }
